@@ -1,0 +1,124 @@
+12/09-15:45:07.800041 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:45:16.961388 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50352 -> 10.0.2.20:80
+12/09-15:45:17.800624 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:45:18.963496 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50354 -> 10.0.2.20:80
+12/09-15:45:20.966674 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50356 -> 10.0.2.20:80
+12/09-15:45:22.969688 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50358 -> 10.0.2.20:80
+12/09-15:45:24.973003 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50360 -> 10.0.2.20:80
+12/09-15:45:26.976488 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50362 -> 10.0.2.20:80
+12/09-15:45:27.800624 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:45:28.979326 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50364 -> 10.0.2.20:80
+12/09-15:45:30.982664 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50368 -> 10.0.2.20:80
+12/09-15:45:32.985976 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50370 -> 10.0.2.20:80
+12/09-15:45:34.987267 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50372 -> 10.0.2.20:80
+12/09-15:45:36.990081 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50374 -> 10.0.2.20:80
+12/09-15:45:37.810158 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:45:38.992804 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50376 -> 10.0.2.20:80
+12/09-15:45:40.994651 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50378 -> 10.0.2.20:80
+12/09-15:45:42.996754 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50380 -> 10.0.2.20:80
+12/09-15:45:44.999534 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50382 -> 10.0.2.20:80
+12/09-15:45:47.002761 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50384 -> 10.0.2.20:80
+12/09-15:45:47.820095 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:45:49.004527 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50388 -> 10.0.2.20:80
+12/09-15:45:51.007853 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50390 -> 10.0.2.20:80
+12/09-15:45:53.011143 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50392 -> 10.0.2.20:80
+12/09-15:45:55.013426 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50394 -> 10.0.2.20:80
+12/09-15:45:57.016091 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50396 -> 10.0.2.20:80
+12/09-15:45:57.830051 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:45:59.017841 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50398 -> 10.0.2.20:80
+12/09-15:46:01.020297 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50400 -> 10.0.2.20:80
+12/09-15:46:03.024483 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50402 -> 10.0.2.20:80
+12/09-15:46:05.026189 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50404 -> 10.0.2.20:80
+12/09-15:46:07.027862 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50406 -> 10.0.2.20:80
+12/09-15:46:07.840148 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:46:09.030020 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50408 -> 10.0.2.20:80
+12/09-15:46:11.032695 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50410 -> 10.0.2.20:80
+12/09-15:46:13.034497 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50412 -> 10.0.2.20:80
+12/09-15:46:15.036712 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50414 -> 10.0.2.20:80
+12/09-15:46:17.039371 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50416 -> 10.0.2.20:80
+12/09-15:46:17.850046 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:46:19.042938 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50418 -> 10.0.2.20:80
+12/09-15:46:21.046177 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50420 -> 10.0.2.20:80
+12/09-15:46:23.047605 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50422 -> 10.0.2.20:80
+12/09-15:46:25.050000 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50424 -> 10.0.2.20:80
+12/09-15:46:27.052580 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50426 -> 10.0.2.20:80
+12/09-15:46:27.859994 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:46:29.054451 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50428 -> 10.0.2.20:80
+12/09-15:46:31.056720 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50430 -> 10.0.2.20:80
+12/09-15:46:33.059374 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50432 -> 10.0.2.20:80
+12/09-15:46:35.061087 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50434 -> 10.0.2.20:80
+12/09-15:46:37.063565 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50436 -> 10.0.2.20:80
+12/09-15:46:37.870041 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:46:39.066653 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50438 -> 10.0.2.20:80
+12/09-15:46:41.068719 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50440 -> 10.0.2.20:80
+12/09-15:46:43.070928 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50442 -> 10.0.2.20:80
+12/09-15:46:45.073412 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50444 -> 10.0.2.20:80
+12/09-15:46:47.075934 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50446 -> 10.0.2.20:80
+12/09-15:46:47.880041 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:46:49.077857 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50448 -> 10.0.2.20:80
+12/09-15:46:51.080373 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50450 -> 10.0.2.20:80
+12/09-15:46:53.083171 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50452 -> 10.0.2.20:80
+12/09-15:46:55.085775 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50454 -> 10.0.2.20:80
+12/09-15:46:57.087802 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50456 -> 10.0.2.20:80
+12/09-15:46:57.890018 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:46:59.090009 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50458 -> 10.0.2.20:80
+12/09-15:47:01.092818 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50460 -> 10.0.2.20:80
+12/09-15:47:03.095487 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50462 -> 10.0.2.20:80
+12/09-15:47:05.097798 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50464 -> 10.0.2.20:80
+12/09-15:47:07.099992 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50466 -> 10.0.2.20:80
+12/09-15:47:07.900003 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:47:09.102811 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50468 -> 10.0.2.20:80
+12/09-15:47:11.104382 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50470 -> 10.0.2.20:80
+12/09-15:47:13.106652 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50472 -> 10.0.2.20:80
+12/09-15:47:15.108724 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50474 -> 10.0.2.20:80
+12/09-15:47:17.111128 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50476 -> 10.0.2.20:80
+12/09-15:47:17.910043 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:47:19.113314 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50478 -> 10.0.2.20:80
+12/09-15:47:21.115909 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50480 -> 10.0.2.20:80
+12/09-15:47:23.117833 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50482 -> 10.0.2.20:80
+12/09-15:47:25.119706 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50484 -> 10.0.2.20:80
+12/09-15:47:27.122409 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50486 -> 10.0.2.20:80
+12/09-15:47:27.920018 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:47:29.124444 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50490 -> 10.0.2.20:80
+12/09-15:47:31.126203 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50492 -> 10.0.2.20:80
+12/09-15:47:33.127905 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50494 -> 10.0.2.20:80
+12/09-15:47:35.130076 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50496 -> 10.0.2.20:80
+12/09-15:47:37.132755 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50498 -> 10.0.2.20:80
+12/09-15:47:37.930030 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:47:39.135002 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50500 -> 10.0.2.20:80
+12/09-15:47:41.136653 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50502 -> 10.0.2.20:80
+12/09-15:47:43.138926 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50504 -> 10.0.2.20:80
+12/09-15:47:45.141227 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50506 -> 10.0.2.20:80
+12/09-15:47:47.143405 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50508 -> 10.0.2.20:80
+12/09-15:47:47.940057 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:47:49.146079 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50510 -> 10.0.2.20:80
+12/09-15:47:51.147780 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50512 -> 10.0.2.20:80
+12/09-15:47:53.150076 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50514 -> 10.0.2.20:80
+12/09-15:47:55.152773 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50516 -> 10.0.2.20:80
+12/09-15:47:57.154524 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50520 -> 10.0.2.20:80
+12/09-15:47:57.950093 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:47:59.156704 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50522 -> 10.0.2.20:80
+12/09-15:48:01.159133 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50524 -> 10.0.2.20:80
+12/09-15:48:03.161153 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50526 -> 10.0.2.20:80
+12/09-15:48:05.163322 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50528 -> 10.0.2.20:80
+12/09-15:48:07.166000 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50530 -> 10.0.2.20:80
+12/09-15:48:07.960015 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:48:09.167893 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50532 -> 10.0.2.20:80
+12/09-15:48:11.170034 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50534 -> 10.0.2.20:80
+12/09-15:48:13.171757 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50536 -> 10.0.2.20:80
+12/09-15:48:15.174464 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50538 -> 10.0.2.20:80
+12/09-15:48:17.176780 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50540 -> 10.0.2.20:80
+12/09-15:48:17.970063 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:48:19.179418 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50542 -> 10.0.2.20:80
+12/09-15:48:21.182195 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50544 -> 10.0.2.20:80
+12/09-15:48:23.184477 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50546 -> 10.0.2.20:80
+12/09-15:48:25.186699 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50548 -> 10.0.2.20:80
+12/09-15:48:27.189352 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50550 -> 10.0.2.20:80
+12/09-15:48:27.980042 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:48:29.191220 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50552 -> 10.0.2.20:80
+12/09-15:48:31.193310 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50556 -> 10.0.2.20:80
+12/09-15:48:33.196001 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50558 -> 10.0.2.20:80
+12/09-15:48:35.197685 [**] [1:13990:27] "SQL union select - possible sql injection attempt - GET parameter" [**] [Classification: Misc Attack] [Priority: 2] {TCP} 10.0.0.20:50560 -> 10.0.2.20:80
+12/09-15:48:37.990040 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:48:48.000035 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5
+12/09-15:48:58.010074 [**] [116:281:1] "(ipv6) IPv6 header includes an invalid value for the 'next header' field" [**] [Priority: 3] {IP} fe80::3cc3:60ff:febe:2537 -> ff02::5

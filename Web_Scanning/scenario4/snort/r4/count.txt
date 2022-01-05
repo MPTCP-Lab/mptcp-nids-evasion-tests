@@ -1,0 +1,16 @@
++--------------------------------------------------------------------------+--------+
+|                                  Rules                                   | Count  |
++--------------------------------------------------------------------------+--------+
+|                 (http_inspect) misformatted HTTP traffic                 |   3    |
+|                     (http_inspect) not HTTP traffic                      |   14   |
+|                (http_inspect) request message without URI                |   2    |
+|                      (http_inspect) unknown method                       |   2    |
+| (ipv6) IPv6 header includes an invalid value for the 'next header' field |  430   |
+|                   (tcp) experimental TCP options found                   | 119915 |
+|                       SERVER-IIS ASP contents view                       |   1    |
+|       SERVER-IIS Microsoft Windows IIS directory traversal attempt       |   25   |
+|                     SERVER-IIS scripts-browse access                     |   1    |
+|                        SERVER-WEBAPP /.... access                        |   26   |
+|             SERVER-WEBAPP Novell Groupwise gwweb.exe access              |   2    |
+|               SERVER-WEBAPP PHPLIB remote command attempt                |   3    |
++--------------------------------------------------------------------------+--------+

@@ -1,0 +1,8 @@
++--------------------------------------------------------------------------+-------+
+|                                  Rules                                   | Count |
++--------------------------------------------------------------------------+-------+
+|                     (http_inspect) not HTTP traffic                      |  100  |
+|           (http_inspect) server response before client request           |  100  |
+| (ipv6) IPv6 header includes an invalid value for the 'next header' field |  27   |
+|                   (tcp) experimental TCP options found                   | 2101  |
++--------------------------------------------------------------------------+-------+

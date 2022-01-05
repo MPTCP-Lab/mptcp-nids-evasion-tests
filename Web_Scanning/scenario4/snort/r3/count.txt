@@ -1,0 +1,24 @@
++--------------------------------------------------------------------------+--------+
+|                                  Rules                                   | Count  |
++--------------------------------------------------------------------------+--------+
+|                     (arp_spoof) unicast ARP request                      |   1    |
+|        (http_inspect) 'HTTP' in version field not all upper case         |   1    |
+|                      (http_inspect) ascii encoding                       |   3    |
+|                 (http_inspect) misformatted HTTP traffic                 |   14   |
+|                     (http_inspect) not HTTP traffic                      |  6626  |
+|                 (http_inspect) self directory traversal                  |   5    |
+|           (http_inspect) server response before client request           |  6912  |
+|                      (http_inspect) unknown method                       |   1    |
+|          (http_inspect) white space before or between messages           |   1    |
+| (ipv6) IPv6 header includes an invalid value for the 'next header' field |  883   |
+|                   (tcp) experimental TCP options found                   | 160767 |
+|      BROWSER-OTHER HTTP characters prior to header evasion attempt       |   5    |
+|   POLICY-OTHER script tag in URI - likely cross-site scripting attempt   |   2    |
+|       SERVER-IIS Microsoft Windows IIS directory traversal attempt       |   3    |
+|    SERVER-OTHER Apple CUPS web interface cross site scripting attempt    |   2    |
+|                        SERVER-WEBAPP /.... access                        |   14   |
+|                    SERVER-WEBAPP ?PageServices access                    |   1    |
+|         SERVER-WEBAPP Netscape Enterprise Server directory view          |   1    |
+|                   SERVER-WEBAPP Netscape dir index wp                    |   1    |
+|             SERVER-WEBAPP PHP-CGI command injection attempt              |   1    |
++--------------------------------------------------------------------------+--------+

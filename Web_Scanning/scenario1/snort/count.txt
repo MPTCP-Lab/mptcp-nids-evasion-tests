@@ -1,0 +1,410 @@
++-----------------------------------------------------------------------------------------+-------+
+|                                          Rules                                          | Count |
++-----------------------------------------------------------------------------------------+-------+
+|              (http_inspect) HTTP Content-Length message body was truncated              |  20   |
+|              (http_inspect) HTTP header line terminated by CR without a LF              |   1   |
+|                 (http_inspect) POST or PUT w/o content-length or chunks                 |  23   |
+|                           (http_inspect) URI badly formatted                            |  880  |
+|                              (http_inspect) UTF-8 encoding                              |  13   |
+|                              (http_inspect) ascii encoding                              |  25   |
+|                        (http_inspect) backslash used in URI path                        |  75   |
+|                           (http_inspect) directory traversal                            |  85   |
+|                          (http_inspect) double decoding attack                          |  28   |
+|                       (http_inspect) format error in HTTP header                        |  20   |
+|                  (http_inspect) illegal extra whitespace in start line                  |  14   |
+|                        (http_inspect) misformatted HTTP traffic                         |  15   |
+|                           (http_inspect) multi_slash encoding                           |  130  |
+|                             (http_inspect) not HTTP traffic                             | 6926  |
+|                         (http_inspect) self directory traversal                         |   6   |
+|                  (http_inspect) server response before client request                   |   2   |
+|                              (http_inspect) simple request                              |   1   |
+|                       (http_inspect) unescaped space in HTTP URI                        |  13   |
+|                              (http_inspect) unknown method                              |   2   |
+|               (http_inspect) unrecognized type of percent encoding in URI               |   4   |
+|                       (http_inspect) webroot directory traversal                        |  43   |
+|                      (http_inspect) white space within header name                      |   1   |
+|        (ipv6) IPv6 header includes an invalid value for the 'next header' field         |  283  |
+|              BROWSER-OTHER HTTP characters prior to header evasion attempt              |   5   |
+|                     FILE-IDENTIFY .htr access file download request                     |   6   |
+|                 INDICATOR-COMPROMISE c99shell.php command request - cmd                 |   2   |
+|         INDICATOR-OBFUSCATION select concat statement - possible sql injection          |   1   |
+|                          INDICATOR-SCAN PHP info leak attempt                           |   9   |
+|                 MALWARE-CNC Win.Trojan.Zbot variant outbound connection                 |   1   |
+|                      OS-OTHER Cisco IOS HTTP configuration attempt                      |  94   |
+|           OS-WINDOWS Microsoft generic javascript handler in URI XSS attempt            |  17   |
+|              POLICY-OTHER Adobe ColdFusion admin interface access attempt               |   2   |
+|             POLICY-OTHER Adobe ColdFusion component browser access attempt              |   1   |
+|                       POLICY-OTHER external admin access attempt                        |  522  |
+|          POLICY-OTHER script tag in URI - likely cross-site scripting attempt           |  284  |
+|            PROTOCOL-SCADA Cogent DataHub server-side information disclosure             |   3   |
+|            SERVER-APACHE Apache SSI error page cross-site scripting attempt             |   1   |
+|                SERVER-APACHE Apache Tomcat TroubleShooter servlet access                |   1   |
+|                     SERVER-APACHE Apache Tomcat server snoop access                     |   1   |
+|        SERVER-APACHE Apache Tomcat servlet mapping cross site scripting attempt         |   4   |
+|       SERVER-APACHE Apache mod_proxy reverse proxy information disclosure attempt       |  863  |
+|                                 SERVER-IIS .cnf access                                  |  11   |
+|                  SERVER-IIS /SiteServer/Publishing/viewcode.asp access                  |   2   |
+|                          SERVER-IIS /exchange/root.asp access                           |   1   |
+|                          SERVER-IIS /exchange/root.asp attempt                          |   1   |
+|                         SERVER-IIS /iisadmpwd/aexp2.htr access                          |   1   |
+|                            SERVER-IIS /msadc/samples/ access                            |   3   |
+|                           SERVER-IIS /scripts/samples/ access                           |  10   |
+|                              SERVER-IIS ASP contents view                               |   3   |
+|                              SERVER-IIS CGImail.exe access                              |   1   |
+|                          SERVER-IIS CodeRed v2 root.exe access                          |   1   |
+|                              SERVER-IIS IISProtect access                               |   1   |
+|                       SERVER-IIS IISProtect siteadmin.asp access                        |   1   |
+|                              SERVER-IIS ISAPI .ida access                               |   2   |
+|                              SERVER-IIS ISAPI .idq access                               |  10   |
+|                              SERVER-IIS ISAPI .idq attempt                              |   6   |
+|                            SERVER-IIS ISAPI .printer access                             |   1   |
+|                                SERVER-IIS JET VBA access                                |   2   |
+|                           SERVER-IIS MS BizTalk server access                           |   1   |
+|                                SERVER-IIS MSProxy access                                |   1   |
+|           SERVER-IIS Microsoft ASP.NET bad request denial of service attempt            |   2   |
+|              SERVER-IIS Microsoft Windows IIS directory traversal attempt               |   3   |
+|     SERVER-IIS Microsoft Windows IIS5 NTLM and basic authentication bypass attempt      |   1   |
+|                    SERVER-IIS VP-ASP ShopDisplayProducts.asp access                     |   2   |
+|                               SERVER-IIS _mem_bin access                                |   6   |
+|                              SERVER-IIS adctest.asp access                              |   1   |
+|                                 SERVER-IIS bdir access                                  |   1   |
+|                               SERVER-IIS bdir.htr access                                |   1   |
+|                                SERVER-IIS cmd.exe access                                |  24   |
+|                           SERVER-IIS codebrowser Exair access                           |   1   |
+|                            SERVER-IIS codebrowser SDK access                            |   4   |
+|                               SERVER-IIS ctss.idc access                                |   1   |
+|                             SERVER-IIS doctodep.btr access                              |   2   |
+|                                SERVER-IIS fpcount access                                |   4   |
+|                              SERVER-IIS global.asa access                               |   2   |
+|                         SERVER-IIS httpodbc.dll access - nimda                          |   1   |
+|                               SERVER-IIS iisadmin access                                |   3   |
+|                              SERVER-IIS iisadmpwd attempt                               |   5   |
+|                              SERVER-IIS iissamples access                               |  28   |
+|                                SERVER-IIS jet vba access                                |   1   |
+|                              SERVER-IIS msadcs.dll access                               |   1   |
+|                              SERVER-IIS newdsn.exe access                               |   1   |
+|                               SERVER-IIS pbserver access                                |   1   |
+|                               SERVER-IIS ping.asp access                                |   1   |
+|                             SERVER-IIS postinfo.asp access                              |   1   |
+|                              SERVER-IIS repost.asp access                               |   1   |
+|                             SERVER-IIS search97.vts access                              |   1   |
+|                             SERVER-IIS sgdynamo.exe access                              |   1   |
+|                               SERVER-IIS showcode access                                |   1   |
+|                             SERVER-IIS showcode.asp access                              |   2   |
+|                          SERVER-IIS site server config access                           |   1   |
+|                                SERVER-IIS srchadm access                                |   1   |
+|                 SERVER-IIS tilde character file name discovery attempt                  |   1   |
+|                               SERVER-IIS trace.axd access                               |   2   |
+|                               SERVER-IIS users.xml access                               |   1   |
+|                               SERVER-IIS viewcode access                                |   4   |
+|                             SERVER-IIS viewcode.asp access                              |   8   |
+|                                SERVER-IIS webhits access                                |   6   |
+|                    SERVER-OTHER Adobe Coldfusion ?Mode=debug attempt                    |   1   |
+|                   SERVER-OTHER Adobe Coldfusion addcontent.cfm access                   |   1   |
+|                   SERVER-OTHER Adobe Coldfusion administrator access                    |   1   |
+|                  SERVER-OTHER Adobe Coldfusion application.cfm access                   |   3   |
+|                      SERVER-OTHER Adobe Coldfusion beaninfo access                      |   1   |
+|                      SERVER-OTHER Adobe Coldfusion cfappman access                      |   1   |
+|                    SERVER-OTHER Adobe Coldfusion cfcache.map access                     |   2   |
+|                SERVER-OTHER Adobe Coldfusion cfmlsyntaxcheck.cfm access                 |   1   |
+|                    SERVER-OTHER Adobe Coldfusion displayfile access                     |   1   |
+|                    SERVER-OTHER Adobe Coldfusion evaluate.cfm access                    |   1   |
+|                     SERVER-OTHER Adobe Coldfusion exampleapp access                     |   5   |
+|                SERVER-OTHER Adobe Coldfusion exampleapp application.cfm                 |   1   |
+|                      SERVER-OTHER Adobe Coldfusion expeval access                       |   6   |
+|                      SERVER-OTHER Adobe Coldfusion exprcalc access                      |   3   |
+|                   SERVER-OTHER Adobe Coldfusion fileexists.cfm access                   |   1   |
+|                    SERVER-OTHER Adobe Coldfusion getfile.cfm access                     |   1   |
+|                SERVER-OTHER Adobe Coldfusion gettempdirectory.cfm access                |   1   |
+|                    SERVER-OTHER Adobe Coldfusion openfile.cfm access                    |   1   |
+|                       SERVER-OTHER Adobe Coldfusion parks access                        |   1   |
+|                    SERVER-OTHER Adobe Coldfusion sendmail.cfm access                    |   1   |
+|                     SERVER-OTHER Adobe Coldfusion snippets attempt                      |   4   |
+|                  SERVER-OTHER Adobe Coldfusion sourcewindow.cfm access                  |   1   |
+|                   SERVER-OTHER Adobe Coldfusion startstop DOS access                    |   1   |
+|                  SERVER-OTHER Adobe Coldfusion viewexample.cfm access                   |   1   |
+|           SERVER-OTHER Apple CUPS web interface cross site scripting attempt            |  294  |
+|                      SERVER-OTHER Microsoft Frontpage .... request                      |  30   |
+|                   SERVER-OTHER Microsoft Frontpage /_vti_bin/ access                    |  62   |
+|                  SERVER-OTHER Microsoft Frontpage _vti_inf.html access                  |   1   |
+|                    SERVER-OTHER Microsoft Frontpage _vti_rpc access                     |   1   |
+|                   SERVER-OTHER Microsoft Frontpage access.cnf access                    |   1   |
+|               SERVER-OTHER Microsoft Frontpage administrators.pwd access                |   1   |
+|                   SERVER-OTHER Microsoft Frontpage author.exe access                    |   2   |
+|                   SERVER-OTHER Microsoft Frontpage authors.pwd access                   |   1   |
+|                   SERVER-OTHER Microsoft Frontpage cfgwiz.exe access                    |   4   |
+|                  SERVER-OTHER Microsoft Frontpage contents.htm access                   |   1   |
+|                   SERVER-OTHER Microsoft Frontpage dvwssr.dll access                    |   1   |
+|                  SERVER-OTHER Microsoft Frontpage form_results access                   |   1   |
+|                SERVER-OTHER Microsoft Frontpage form_results.htm access                 |   2   |
+|                  SERVER-OTHER Microsoft Frontpage fpadmcgi.exe access                   |   2   |
+|                   SERVER-OTHER Microsoft Frontpage fpadmin.htm access                   |   1   |
+|                  SERVER-OTHER Microsoft Frontpage fpremadm.exe access                   |   4   |
+|                  SERVER-OTHER Microsoft Frontpage fpsrvadm.exe access                   |   4   |
+|                   SERVER-OTHER Microsoft Frontpage orders.htm access                    |   1   |
+|                   SERVER-OTHER Microsoft Frontpage orders.txt access                    |   1   |
+|                 SERVER-OTHER Microsoft Frontpage rad fp30reg.dll access                 |   2   |
+|                  SERVER-OTHER Microsoft Frontpage register.htm access                   |   1   |
+|                  SERVER-OTHER Microsoft Frontpage register.txt access                   |   1   |
+|                SERVER-OTHER Microsoft Frontpage registrations.htm access                |   1   |
+|                SERVER-OTHER Microsoft Frontpage registrations.txt access                |   1   |
+|                   SERVER-OTHER Microsoft Frontpage service.cnf access                   |   1   |
+|                      SERVER-OTHER Microsoft Frontpage service.pwd                       |   1   |
+|                  SERVER-OTHER Microsoft Frontpage services.cnf access                   |   1   |
+|                    SERVER-OTHER Microsoft Frontpage shtml.dll access                    |   2   |
+|                    SERVER-OTHER Microsoft Frontpage shtml.exe access                    |   4   |
+|                    SERVER-OTHER Microsoft Frontpage users.pwd access                    |   1   |
+|                   SERVER-OTHER Microsoft Frontpage writeto.cnf access                   |   1   |
+|                        SERVER-OTHER readme.eml download attempt                         |   1   |
+|                             SERVER-WEBAPP .DS_Store access                              |   1   |
+|                             SERVER-WEBAPP .FBCIndex access                              |   1   |
+|                           SERVER-WEBAPP .bash_history access                            |   1   |
+|                              SERVER-WEBAPP .history access                              |   1   |
+|                             SERVER-WEBAPP .htaccess access                              |   6   |
+|                         SERVER-WEBAPP .htpasswd access attempt                          |   2   |
+|                             SERVER-WEBAPP .nsconfig access                              |   1   |
+|                              SERVER-WEBAPP .wwwacl access                               |   4   |
+|                               SERVER-WEBAPP /.... access                                |  14   |
+|                     SERVER-WEBAPP /.svn/entries file access attempt                     |   1   |
+|                            SERVER-WEBAPP /CVS/Entries access                            |   1   |
+|                              SERVER-WEBAPP /_admin access                               |   2   |
+|                               SERVER-WEBAPP /doc/ access                                |  56   |
+|                           SERVER-WEBAPP /doc/packages access                            |   1   |
+|                      SERVER-WEBAPP /etc/passwd file access attempt                      |  267  |
+|                      SERVER-WEBAPP /etc/shadow file access attempt                      |   2   |
+|                         SERVER-WEBAPP /fcgi-bin/echo.exe access                         |   1   |
+|                             SERVER-WEBAPP /home/www access                              |   1   |
+|                      SERVER-WEBAPP /ws_ftp.log file access attempt                      |   3   |
+|                        SERVER-WEBAPP /wwwboard/passwd.txt access                        |   1   |
+|                               SERVER-WEBAPP /~ftp access                                |   1   |
+|                SERVER-WEBAPP 3R Soft MailStudio 2000 mailview.cgi access                |   1   |
+|                           SERVER-WEBAPP ?PageServices access                            |   1   |
+|                            SERVER-WEBAPP Admin_files access                             |   2   |
+|                    SERVER-WEBAPP Advanced Poll admin_edit.php access                    |   1   |
+|                  SERVER-WEBAPP Advanced Poll admin_settings.php access                  |   2   |
+|                 SERVER-WEBAPP Advanced Poll admin_templates.php access                  |   1   |
+|                SERVER-WEBAPP Alabanza Control Panel nsManager.cgi access                |   1   |
+|      SERVER-WEBAPP Apache Server mod_proxy Error Page cross site scripting attempt      |   7   |
+|                         SERVER-WEBAPP Axis Storpoint CD access                          |   1   |
+|                               SERVER-WEBAPP BBoard access                               |   1   |
+|                      SERVER-WEBAPP BLNews objects.inc.php4 access                       |   1   |
+|                       SERVER-WEBAPP Blahz-DNS dostuff.php access                        |   1   |
+|                 SERVER-WEBAPP Blahz-DNS dostuff.php modify user attempt                 |   1   |
+|                        SERVER-WEBAPP CCBill whereami.cgi access                         |   1   |
+|                      SERVER-WEBAPP CGIScript.net csNews.cgi access                      |   1   |
+|                         SERVER-WEBAPP CSGuestbook setup attempt                         |   1   |
+|                            SERVER-WEBAPP CSMailto.cgi access                            |   1   |
+|                 SERVER-WEBAPP Cisco Catalyst command execution attempt                  |   1   |
+|          SERVER-WEBAPP Citrix ADC and Gateway arbitrary code execution attempt          |   1   |
+|                    SERVER-WEBAPP Compaq Insight directory traversal                     |   1   |
+|                    SERVER-WEBAPP Cyboards default_header.php access                     |   1   |
+|                               SERVER-WEBAPP DB4Web access                               |   1   |
+|                               SERVER-WEBAPP DCShop access                               |   2   |
+|                     SERVER-WEBAPP DCShop auth_user_file.txt access                      |   5   |
+|                         SERVER-WEBAPP DCShop orders.txt access                          |   6   |
+|                     SERVER-WEBAPP EasyBoard 2000 ezadmin.cgi access                     |   1   |
+|                     SERVER-WEBAPP EasyBoard 2000 ezboard.cgi access                     |   1   |
+|                      SERVER-WEBAPP EasyBoard 2000 ezman.cgi access                      |   1   |
+|                        SERVER-WEBAPP Ecommerce checks.txt access                        |   1   |
+|                        SERVER-WEBAPP Ecommerce import.txt access                        |   3   |
+|                               SERVER-WEBAPP ExAir access                                |   5   |
+| SERVER-WEBAPP F5 BIG-IP Traffic Management User Interface remote code execution attempt |   2   |
+|                        SERVER-WEBAPP Faq-O-Matic fom.cgi access                         |   1   |
+|      SERVER-WEBAPP Fortinet FortiOS SSL VPN web portal directory traversal attempt      |   1   |
+|                           SERVER-WEBAPP ICQ Webfront HTTP DOS                           |   1   |
+|                SERVER-WEBAPP IGeneric Free Shopping Cart page.php access                |   4   |
+|       SERVER-WEBAPP IOServer OPC Server directory traversal exploitation attempt        |  44   |
+|                     SERVER-WEBAPP Interactive Story story.pl access                     |   1   |
+|                        SERVER-WEBAPP InteractiveQuery.jsp access                        |   1   |
+|                     SERVER-WEBAPP JBoss JMX console access attempt                      |   2   |
+|                     SERVER-WEBAPP JBoss web console access attempt                      |   2   |
+|          SERVER-WEBAPP Joomla com_contenthistory module SQL injection attempt           |   1   |
+|                     SERVER-WEBAPP Linksys BEFSR41 gozila.cgi access                     |   1   |
+|           SERVER-WEBAPP MVPower DVR Shell arbitrary command execution attempt           |   2   |
+|                            SERVER-WEBAPP MachineInfo access                             |   1   |
+|            SERVER-WEBAPP Macromedia SiteSpring cross site scripting attempt             |   1   |
+|                          SERVER-WEBAPP Mambo upload.php access                          |   6   |
+|                       SERVER-WEBAPP Mambo uploadimage.php access                        |   2   |
+|              SERVER-WEBAPP Multiple Products invalid HTTP request attempt               |  493  |
+|              SERVER-WEBAPP Multiple Vendor server file disclosure attempt               |   2   |
+|            SERVER-WEBAPP NeoFrag CMS database information disclosure attempt            |   1   |
+|                 SERVER-WEBAPP Netscape Enterprise Server directory view                 |   1   |
+|                      SERVER-WEBAPP Netscape PublishingXpert access                      |   1   |
+|                           SERVER-WEBAPP Netscape admin passwd                           |   1   |
+|                           SERVER-WEBAPP Netscape dir index wp                           |   1   |
+|                      SERVER-WEBAPP Nortel Contivity cgiproc access                      |   2   |
+|  SERVER-WEBAPP Novell GroupWise Internet Agent content-length integer overflow attempt  |   1   |
+|                    SERVER-WEBAPP Novell Groupwise gwweb.exe attempt                     |   3   |
+|      SERVER-WEBAPP Novell Zenworks Mobile Management cross site scripting attempt       |   1   |
+|   SERVER-WEBAPP Oracle 9i Application Server OWA_UTIL information disclosure attempt    |   7   |
+|      SERVER-WEBAPP Oracle Application Server 9i unauthenticated dms access attempt      |   6   |
+|                   SERVER-WEBAPP Oracle Cobalt RaQ service.cgi access                    |   2   |
+|               SERVER-WEBAPP Oracle Dynamic Monitoring Services dms access               |   1   |
+|                    SERVER-WEBAPP Oracle Java Process Manager access                     |   1   |
+|                       SERVER-WEBAPP Oracle XSQLConfig.xml access                        |   2   |
+|           SERVER-WEBAPP PHP includedir parameter remote file include attempt            |  18   |
+|                 SERVER-WEBAPP PHP phpinfo cross site scripting attempt                  |   1   |
+|                     SERVER-WEBAPP PHP-CGI command injection attempt                     |   3   |
+|                   SERVER-WEBAPP PHP-Wiki cross site scripting attempt                   |   1   |
+|                     SERVER-WEBAPP Phorum /support/common.php access                     |   1   |
+|                            SERVER-WEBAPP Phorum admin access                            |   1   |
+|                         SERVER-WEBAPP Progress webspeed access                          |   1   |
+|             SERVER-WEBAPP Pulse Secure SSL VPN arbitrary file read attempt              |   1   |
+|             SERVER-WEBAPP Pulse Secure SSL VPN directory traversal attempt              |   1   |
+|               SERVER-WEBAPP RBS ISP /newuser  directory traversal attempt               |   1   |
+|                          SERVER-WEBAPP RBS ISP /newuser access                          |   2   |
+|                  SERVER-WEBAPP Ruby on Rails command injection attempt                  |   5   |
+|                 SERVER-WEBAPP SAP servlet authentication bypass attempt                 |  45   |
+|                         SERVER-WEBAPP SalesLogix Eviewer access                         |   1   |
+|                           SERVER-WEBAPP ServletManager access                           |   1   |
+|                             SERVER-WEBAPP Setup.php access                              |   1   |
+|      SERVER-WEBAPP Sourceforge Gallery search engine cross-site scripting attempt       |   5   |
+|  SERVER-WEBAPP Symantec Antivirus admin scan interface negative Content-Length attempt  |   1   |
+|     SERVER-WEBAPP TikiWiki tiki-graph_formula.php remote php code execution attempt     |   1   |
+|                SERVER-WEBAPP TrackerCam negative Content-Length attempt                 |   1   |
+|           SERVER-WEBAPP Trend Micro Interscan VirusWall setpasswd.cgi access            |   1   |
+|                       SERVER-WEBAPP Trend Micro OfficeScan access                       |   1   |
+|                         SERVER-WEBAPP VirusWall FtpSave access                          |   1   |
+|                         SERVER-WEBAPP VirusWall catinfo access                          |   2   |
+|                              SERVER-WEBAPP WEB-INF access                               |   5   |
+|                        SERVER-WEBAPP a1stats a1disp3.cgi access                         |   2   |
+|              SERVER-WEBAPP a1stats a1disp3.cgi directory traversal attempt              |   2   |
+|                             SERVER-WEBAPP active.log access                             |   1   |
+|                             SERVER-WEBAPP admin.php access                              |  26   |
+|                              SERVER-WEBAPP admin.pl access                              |   4   |
+|                             SERVER-WEBAPP adminlogin access                             |   2   |
+|                               SERVER-WEBAPP ans.pl access                               |   3   |
+|                              SERVER-WEBAPP ans.pl attempt                               |   3   |
+|                       SERVER-WEBAPP apache source.asp file access                       |   1   |
+|                         SERVER-WEBAPP architext_query.pl access                         |   1   |
+|                              SERVER-WEBAPP args.bat access                              |   1   |
+|                            SERVER-WEBAPP autohtml.php access                            |   1   |
+|                              SERVER-WEBAPP awstats access                               |   1   |
+|                       SERVER-WEBAPP b2 cafelog gm-2-b2.php access                       |   2   |
+|                               SERVER-WEBAPP backup access                               |   7   |
+|                        SERVER-WEBAPP basilix mysql.class access                         |   1   |
+|                        SERVER-WEBAPP basilix sendmail.inc access                        |   1   |
+|                           SERVER-WEBAPP bb_smilies.php access                           |   4   |
+|                            SERVER-WEBAPP bigconf.cgi access                             |   2   |
+|                              SERVER-WEBAPP calendar access                              |  23   |
+|                            SERVER-WEBAPP calendar.php access                            |   9   |
+|                            SERVER-WEBAPP calendar.pl access                             |   2   |
+|                         SERVER-WEBAPP calendar_admin.pl access                          |   1   |
+|           SERVER-WEBAPP calendar_admin.pl arbitrary command execution attempt           |   1   |
+|                          SERVER-WEBAPP cart 32 AdminPwd access                          |   1   |
+|                                SERVER-WEBAPP cat_ access                                |  19   |
+|                             SERVER-WEBAPP catgy.cgi access                              |   1   |
+|                           SERVER-WEBAPP caucho-status access                            |   1   |
+|                               SERVER-WEBAPP cgicso access                               |   6   |
+|                              SERVER-WEBAPP cgimail access                               |   4   |
+|                            SERVER-WEBAPP cgitest.exe access                             |   1   |
+|                          SERVER-WEBAPP classifieds.cgi access                           |   1   |
+|                            SERVER-WEBAPP convert.bas access                             |   1   |
+|                            SERVER-WEBAPP cpshost.dll access                             |   1   |
+|       SERVER-WEBAPP cross site scripting HTML Image tag set to javascript attempt       |   3   |
+|                         SERVER-WEBAPP csChatRBox setup attempt                          |   1   |
+|                        SERVER-WEBAPP csLiveSupport setup attempt                        |   1   |
+|                           SERVER-WEBAPP csPassword.cgi access                           |   2   |
+|                          SERVER-WEBAPP csSearch setup attempt                           |   1   |
+|                             SERVER-WEBAPP cvslog.cgi access                             |   2   |
+|                   SERVER-WEBAPP db4web_c directory traversal attempt                    |   1   |
+|                            SERVER-WEBAPP dcforum.cgi access                             |   1   |
+|                           SERVER-WEBAPP directory.php access                            |   2   |
+|                            SERVER-WEBAPP document.d2w access                            |   1   |
+|                         SERVER-WEBAPP eXtropia webstore access                          |   1   |
+|                            SERVER-WEBAPP emumail.cgi access                             |   5   |
+|   SERVER-WEBAPP encoded cross site scripting HTML Image tag set to javascript attempt   |   3   |
+|                             SERVER-WEBAPP envout.bat access                             |   1   |
+|                             SERVER-WEBAPP faxsurvey access                              |   1   |
+|                              SERVER-WEBAPP files.pl access                              |   2   |
+|                               SERVER-WEBAPP finger access                               |   1   |
+|                             SERVER-WEBAPP gbook.cgi access                              |   1   |
+|            SERVER-WEBAPP generic SQL select statement possible sql injection            |   1   |
+|               SERVER-WEBAPP generic cross site scripting via url attempt                |   6   |
+|                              SERVER-WEBAPP glimpse access                               |   1   |
+|                             SERVER-WEBAPP global.inc access                             |   3   |
+|                            SERVER-WEBAPP globals.jsa access                             |   2   |
+|                             SERVER-WEBAPP globals.pl access                             |   1   |
+|                              SERVER-WEBAPP handler access                               |   6   |
+|                             SERVER-WEBAPP httpd.conf access                             |   2   |
+|                     SERVER-WEBAPP iChat directory traversal attempt                     |   1   |
+|                           SERVER-WEBAPP iPlanet .perf access                            |   1   |
+|                SERVER-WEBAPP iPlanet Search directory traversal attempt                 |   2   |
+|                              SERVER-WEBAPP intranet access                              |   2   |
+|                       SERVER-WEBAPP jrun directory browse attempt                       |   3   |
+|                             SERVER-WEBAPP listrec.pl access                             |   2   |
+|                            SERVER-WEBAPP loadpage.cgi access                            |   3   |
+|                           SERVER-WEBAPP logicworks.ini access                           |   1   |
+|                             SERVER-WEBAPP login.htm access                              |   6   |
+|                           SERVER-WEBAPP mall log order access                           |   1   |
+|                          SERVER-WEBAPP ministats admin access                           |   1   |
+|                             SERVER-WEBAPP mlog.phtml access                             |   2   |
+|                      SERVER-WEBAPP mod-plsql administration access                      |   8   |
+|                          SERVER-WEBAPP mod_gzip_status access                           |   1   |
+|                            SERVER-WEBAPP modules.php access                             |  36   |
+|            SERVER-WEBAPP mxBB MX Faq module_root_path file inclusion attempt            |   1   |
+|                      SERVER-WEBAPP myPHPNuke chatheader.php access                      |   1   |
+|                       SERVER-WEBAPP myPHPNuke partner.php access                        |   1   |
+|                            SERVER-WEBAPP mylog.phtml access                             |   2   |
+|                               SERVER-WEBAPP nobody access                               |   1   |
+|                         SERVER-WEBAPP oracle portal demo access                         |   3   |
+|                   SERVER-WEBAPP oracle web application server access                    |   3   |
+|              SERVER-WEBAPP oracle web arbitrary command execution attempt               |   1   |
+|                             SERVER-WEBAPP p-news.php access                             |   1   |
+|                           SERVER-WEBAPP parse_xml.cgi access                            |   1   |
+|                      SERVER-WEBAPP password sent via URL parameter                      |  11   |
+|                                SERVER-WEBAPP phf access                                 |   1   |
+|                        SERVER-WEBAPP philboard_admin.asp access                         |   1   |
+|                              SERVER-WEBAPP php.exe access                               |   2   |
+|               SERVER-WEBAPP phpMyAdmin db_details_importdocsql.php access               |   1   |
+|                        SERVER-WEBAPP piranha passwd.php3 access                         |   1   |
+|                              SERVER-WEBAPP printenv access                              |   2   |
+|                       SERVER-WEBAPP read_body.php access attempt                        |   4   |
+|                            SERVER-WEBAPP readmsg.php access                             |   1   |
+|                              SERVER-WEBAPP redirect access                              |   3   |
+|                        SERVER-WEBAPP remote include path attempt                        |   1   |
+|                          SERVER-WEBAPP rolis guestbook access                           |   1   |
+|                                SERVER-WEBAPP root access                                |   2   |
+|                             SERVER-WEBAPP search.cgi access                             |   4   |
+|                             SERVER-WEBAPP search.dll access                             |   1   |
+|                             SERVER-WEBAPP search.vts access                             |   1   |
+|                            SERVER-WEBAPP server-info access                             |   2   |
+|                           SERVER-WEBAPP server-status access                            |   2   |
+|                           SERVER-WEBAPP shopping cart access                            |   1   |
+|                            SERVER-WEBAPP shoutbox.php access                            |   1   |
+|                          SERVER-WEBAPP smartsearch.cgi access                           |   1   |
+|                            SERVER-WEBAPP smssend.php access                             |   1   |
+|                             SERVER-WEBAPP source.jsp access                             |   1   |
+|                          SERVER-WEBAPP stronghold-info access                           |   1   |
+|                         SERVER-WEBAPP stronghold-status access                          |   1   |
+|                              SERVER-WEBAPP test.cgi access                              |   1   |
+|                              SERVER-WEBAPP test.php access                              |  16   |
+|                  SERVER-WEBAPP triple dot directory traversal attempt                   |  13   |
+|                            SERVER-WEBAPP tstisapi.dll access                            |   1   |
+|                          SERVER-WEBAPP ttCMS header.php access                          |   1   |
+|                      SERVER-WEBAPP unify eWave ServletExec upload                       |   1   |
+|                             SERVER-WEBAPP upload.cgi access                             |   1   |
+|                       SERVER-WEBAPP user_update_passwd.pl access                        |   1   |
+|                            SERVER-WEBAPP view_source access                             |   1   |
+|                             SERVER-WEBAPP w3tvars.pm access                             |   2   |
+|                             SERVER-WEBAPP way-board access                              |   1   |
+|                           SERVER-WEBAPP way-board.cgi access                            |   1   |
+|                            SERVER-WEBAPP webadmin.dll access                            |   1   |
+|                             SERVER-WEBAPP webalizer access                              |   1   |
+|                              SERVER-WEBAPP webcart access                               |   6   |
+|                            SERVER-WEBAPP webcart-lite access                            |   3   |
+|                            SERVER-WEBAPP webdist.cgi access                             |   1   |
+|                            SERVER-WEBAPP webhits.exe access                             |   1   |
+|                 SERVER-WEBAPP weblogic/tomcat .jsp view source attempt                  |  94   |
+|                          SERVER-WEBAPP win-c-sample.exe access                          |   1   |
+|                                SERVER-WEBAPP wrap access                                |   1   |
+|                             SERVER-WEBAPP ws_ftp.ini access                             |   2   |
+|                              SERVER-WEBAPP www-sql access                               |   1   |
+|                            SERVER-WEBAPP wwwboard.pl access                             |   2   |
+|                                SERVER-WEBAPP yabb access                                |   6   |
+|                                 SQL counter.exe access                                  |   1   |
+|             SQL generic sql with comments injection attempt - GET parameter             |   3   |
+|                                 SQL queryhit.htm access                                 |   1   |
+|            SQL union select - possible sql injection attempt - GET parameter            |   2   |
+|              SQL use of concat function with select - likely SQL injection              |   1   |
++-----------------------------------------------------------------------------------------+-------+

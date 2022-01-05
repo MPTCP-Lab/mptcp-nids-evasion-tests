@@ -1,0 +1,40 @@
++-----------------------------------------------------------------------------+--------+
+|                                    Rules                                    | Count  |
++-----------------------------------------------------------------------------+--------+
+|          (http_inspect) 'HTTP' in version field not all upper case          |   1    |
+|                     (http_inspect) URI badly formatted                      |   3    |
+|                        (http_inspect) ascii encoding                        |   2    |
+|                  (http_inspect) misformatted HTTP traffic                   |   17   |
+|                       (http_inspect) not HTTP traffic                       |  6640  |
+|                 (http_inspect) request message without URI                  |   2    |
+|                   (http_inspect) self directory traversal                   |   4    |
+|            (http_inspect) server response before client request             |  6884  |
+|                        (http_inspect) unknown method                        |   3    |
+|  (ipv6) IPv6 header includes an invalid value for the 'next header' field   |  316   |
+|                          (port_scan) TCP portscan                           |   67   |
+|                          (port_scan) TCP portsweep                          |   10   |
+|            (stream_tcp) TCP timestamp is outside of PAWS window             |   1    |
+|             (stream_tcp) data sent on stream not accepting data             |   12   |
+|                    (tcp) experimental TCP options found                     | 309270 |
+|        BROWSER-OTHER HTTP characters prior to header evasion attempt        |   5    |
+|    POLICY-OTHER script tag in URI - likely cross-site scripting attempt     |   3    |
+|              PROTOCOL-ICMP IPv6 multicast neighbor add attempt              |  327   |
+| SERVER-APACHE Apache mod_proxy reverse proxy information disclosure attempt |   3    |
+|                        SERVER-IIS ASP contents view                         |   1    |
+|        SERVER-IIS Microsoft Windows IIS directory traversal attempt         |   28   |
+|                      SERVER-IIS scripts-browse access                       |   1    |
+|     SERVER-OTHER Apple CUPS web interface cross site scripting attempt      |   3    |
+|             SERVER-OTHER Microsoft Frontpage /_vti_bin/ access              |   1    |
+|                         SERVER-WEBAPP /.... access                          |   40   |
+|                SERVER-WEBAPP /etc/passwd file access attempt                |   2    |
+|                SERVER-WEBAPP /ws_ftp.log file access attempt                |   1    |
+|                     SERVER-WEBAPP ?PageServices access                      |   1    |
+|        SERVER-WEBAPP Multiple Products invalid HTTP request attempt         |   1    |
+|           SERVER-WEBAPP Netscape Enterprise Server directory view           |   1    |
+|                     SERVER-WEBAPP Netscape dir index wp                     |   1    |
+|               SERVER-WEBAPP Novell Groupwise gwweb.exe access               |   2    |
+|               SERVER-WEBAPP PHP-CGI command injection attempt               |   1    |
+|                 SERVER-WEBAPP PHPLIB remote command attempt                 |   3    |
+|           SERVER-WEBAPP SAP servlet authentication bypass attempt           |   1    |
+|                        SERVER-WEBAPP calendar access                        |   1    |
++-----------------------------------------------------------------------------+--------+

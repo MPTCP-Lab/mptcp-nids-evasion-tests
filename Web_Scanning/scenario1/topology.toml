@@ -1,0 +1,30 @@
+[nodes]
+
+[nodes.A]
+model = "PC"
+
+[nodes.r1]
+
+[nodes.r2]
+
+[nodes.T]
+model = "PC"
+
+
+[links]
+
+[links.1]
+node1 = "A"
+node2 = "r1"
+use_mptcp = false
+
+[links.2]
+node1 = "r1"
+node2 = "r2"
+
+[links.3]
+node1 = "r2"
+node2 = "T"
+use_mptcp = false
+
+

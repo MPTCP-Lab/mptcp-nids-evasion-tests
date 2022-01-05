@@ -1,0 +1,2 @@
+12/10/2021-10:24:14.202965  [**] [1:2101620:7] GPL POLICY TRAFFIC Non-Standard IP protocol [**] [Classification: Detection of a non-standard protocol or event] [Priority: 2] {IPv6-ICMP} fe80:0000:0000:0000:6018:c4ff:fe2e:8dfd:133 -> ff02:0000:0000:0000:0000:0000:0000:0002:0
+12/10/2021-10:25:08.816261  [**] [1:2101620:7] GPL POLICY TRAFFIC Non-Standard IP protocol [**] [Classification: Detection of a non-standard protocol or event] [Priority: 2] {IPv6-ICMP} fe80:0000:0000:0000:4864:50ff:fe37:66da:133 -> ff02:0000:0000:0000:0000:0000:0000:0002:0

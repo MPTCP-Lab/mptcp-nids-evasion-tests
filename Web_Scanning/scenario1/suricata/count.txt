@@ -1,0 +1,158 @@
++--------------------------------------------------------------------------------------------------------------+-------+
+|                                                    Rules                                                     | Count |
++--------------------------------------------------------------------------------------------------------------+-------+
+|                       ATTACK [PTsecurity] Apache Tomcat RCE on Windows (CVE-2019-0232)                       |   3   |
+|          ATTACK [PTsecurity] Likely Apache HTTP Server 2.4.49 Directory Traversal (CVE-2021-41773)           |   4   |
+|               ATTACK [PTsecurity] Mismatch URI and Host header. Possible Squid cache poisoning               |   1   |
+|                ET EXPLOIT Cisco RV320/RV325 Config Disclosure Attempt Inbound (CVE-2019-1653)                |   1   |
+|                              ET EXPLOIT D-Link DSL-2750B - OS Command Injection                              |   1   |
+|                        ET EXPLOIT F5 TMUI RCE vulnerability CVE-2020-5902 Attempt M1                         |   1   |
+|                        ET EXPLOIT F5 TMUI RCE vulnerability CVE-2020-5902 Attempt M2                         |   1   |
+|                     ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379)                     |   1   |
+|          ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379)           |   1   |
+|                                       ET EXPLOIT MVPower DVR Shell UCE                                       |   2   |
+| ET EXPLOIT Possible Citrix Application Delivery Controller Arbitrary Code Execution Attempt (CVE-2019-19781) |   1   |
+|                      ET EXPLOIT VMware Spring Cloud Directory Traversal (CVE-2020-5410)                      |   4   |
+|             ET HUNTING Possible ELF executable sent when remote host claims to send a Text File              |   1   |
+|                                     ET INFO Dotted Quad Host DLL Request                                     |  21   |
+|                                     ET INFO Dotted Quad Host GZ Request                                      |   2   |
+|                                     ET INFO Dotted Quad Host PDF Request                                     |  11   |
+|                                     ET INFO Dotted Quad Host XLS Request                                     |   2   |
+|                                     ET INFO Dotted Quad Host ZIP Request                                     |   1   |
+|                              ET INFO Executable Download from dotted-quad Host                               |  73   |
+|                                  ET INFO Request to Hidden Environment File                                  |   1   |
+|                                      ET MALWARE IrcBot Downloading .old                                      |   6   |
+|                                   ET MALWARE Pakes2 - Checkin - /test.php                                    |   1   |
+|                                  ET MALWARE Scieron Retrieving Information                                   |   1   |
+|             ET MALWARE Terse alphanumeric executable downloader high likelihood of being hostile             |   1   |
+|                    ET POLICY Executable and linking format (ELF) file download Over HTTP                     |   1   |
+|                               ET POLICY HTTP GET invalid method case outbound                                |   1   |
+|                            ET POLICY Http Client Body contains pwd= in cleartext                             |   2   |
+|                               ET POLICY JBOSS/JMX port 80 access from outside                                |   2   |
+|                              ET POLICY Login Credentials Possibly Passed in URI                              |   5   |
+|                                         ET POLICY Proxy GET Request                                          |   7   |
+|                                    ET POLICY URL Contains pass Parameter                                     |   2   |
+|                                  ET POLICY URL Contains password Parameter                                   |  10   |
+|                                     ET POLICY URL Contains pwd Parameter                                     |   1   |
+|                               ET POLICY exe download via HTTP - Informational                                |  151  |
+|                                  ET POLICY exe download without User Agent                                   |  74   |
+|                              ET SCAN Apache mod_proxy Reverse Proxy Exposure 1                               |  872  |
+|                                 ET SCAN FTPSync Settings Disclosure Attempt                                  |   1   |
+|                                     ET SCAN HTTP GET invalid method case                                     |   1   |
+|                           ET SCAN SFTP/FTP Password Exposure via sftp-config.json                            |   1   |
+|                   ET WEB_CLIENT Possible vBulletin object injection vulnerability Attempt                    |   1   |
+|                                  ET WEB_SERVER /etc/shadow Detected in URI                                   |   2   |
+|                ET WEB_SERVER /system32/ in Uri - Possible Protected Directory Access Attempt                 |  26   |
+|                                ET WEB_SERVER ColdFusion administrator access                                 |   2   |
+|                                ET WEB_SERVER ColdFusion componentutils access                                |   1   |
+|                         ET WEB_SERVER Exploit Suspected PHP Injection Attack (cmd=)                          |  40   |
+|                        ET WEB_SERVER IIS ASP.net Auth Bypass / Canonicalization % 5 C                        |   1   |
+|                           ET WEB_SERVER MYSQL SELECT CONCAT SQL Injection Attempt                            |   4   |
+|                          ET WEB_SERVER Oracle Reports OS Command Injection Attempt                           |   1   |
+|                                   ET WEB_SERVER PHP ENV SuperGlobal in URI                                   |  17   |
+|                       ET WEB_SERVER PHP Easteregg Information-Disclosure (funny-logo)                        |   1   |
+|                        ET WEB_SERVER PHP Easteregg Information-Disclosure (php-logo)                         |   1   |
+|                         ET WEB_SERVER PHP Easteregg Information-Disclosure (phpinfo)                         |   1   |
+|                        ET WEB_SERVER PHP Easteregg Information-Disclosure (zend-logo)                        |   1   |
+|                         ET WEB_SERVER PHP Generic Remote File Include Attempt (HTTP)                         |   1   |
+|                        ET WEB_SERVER PHP Possible http Remote File Inclusion Attempt                         |   1   |
+|                                 ET WEB_SERVER PHP REQUEST SuperGlobal in URI                                 |   2   |
+|                                 ET WEB_SERVER PHP SERVER SuperGlobal in URI                                  |   1   |
+|                                 ET WEB_SERVER PHP SESSION SuperGlobal in URI                                 |   6   |
+|                                        ET WEB_SERVER Poison Null Byte                                        |  107  |
+|                     ET WEB_SERVER Possible MySQL SQLi Attempt Information Schema Access                      |   1   |
+|                           ET WEB_SERVER Possible SQL Injection Attempt SELECT FROM                           |   6   |
+|                          ET WEB_SERVER Possible SQL Injection Attempt UNION SELECT                           |   3   |
+|                   ET WEB_SERVER Possible Usage of MYSQL Comments in URI for SQL Injection                    |   3   |
+|                            ET WEB_SERVER SELECT USER SQL Injection Attempt in URI                            |   1   |
+|                    ET WEB_SERVER Script tag in URI Possible Cross Site Scripting Attempt                     |  299  |
+|                 ET WEB_SERVER Tilde in URI - potential .php~ source disclosure vulnerability                 |   1   |
+|                                     ET WEB_SERVER WEB-PHP phpinfo access                                     |   9   |
+|                      ET WEB_SERVER cmd.exe In URI - Possible Command Execution Attempt                       |  22   |
+|                      ET WEB_SPECIFIC_APPS AForum Remote Inclusion func.php CommonAbsDir                      |   1   |
+|                ET WEB_SPECIFIC_APPS Athena Web Registration Remote Command Execution Attempt                 |   1   |
+|             ET WEB_SPECIFIC_APPS Beacon Remote Inclusion Attempt -- splash.lang.php languagePath             |   2   |
+|         ET WEB_SPECIFIC_APPS Berylium2 Remote Inclusion Attempt -- berylium-classes.php beryliumroot         |   2   |
+|                    ET WEB_SPECIFIC_APPS Horde type Parameter Local File Inclusion Attempt                    |   1   |
+|                      ET WEB_SPECIFIC_APPS Jelsoft vBulletin XSS Attempt -- calendar.php                      |   1   |
+|                ET WEB_SPECIFIC_APPS Jetbox CMS SQL Injection Attempt -- index.php view SELECT                |   1   |
+|                   ET WEB_SPECIFIC_APPS NoAH Remote Inclusion Attempt -- mfa_theme.php tpls                   |   1   |
+|                      ET WEB_SPECIFIC_APPS PHP-CGI query string parameter vulnerability                       |   4   |
+|                               ET WEB_SPECIFIC_APPS PHPNuke general XSS attempt                               |  20   |
+| ET WEB_SPECIFIC_APPS Possible JBoss JMX Console Beanshell Deployer WAR Upload and Deployment Exploit Attempt |   1   |
+|        ET WEB_SPECIFIC_APPS Possible Joomla SQLi Attempt (CVE-2015-7297 CVE-2015-7857 CVE-2015-7858)         |   1   |
+|                         ET WEB_SPECIFIC_APPS PsychoStats XSS Attempt -- register.php                         |   3   |
+|                  ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion 3_lay.php tt_docroot                   |   1   |
+|                ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion class.csv.php tt_docroot                 |   1   |
+|          ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion hg_referenz_jobgalerie.php tt_docroot          |   1   |
+|                   ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion lay.php tt_docroot                    |   1   |
+|           ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion produkte_nach_serie.php tt_docroot            |   1   |
+|         ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion produkte_nach_serie_alle.php tt_docroot         |   1   |
+|              ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion ref_kd_rubrik.php tt_docroot               |   3   |
+|                 ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion referenz.php tt_docroot                 |   1   |
+|                ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion site_conf.php ordnertiefe                |   1   |
+|              ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion surfer_aendern.php tt_docroot              |   1   |
+|           ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion surfer_anmeldung_NWL.php tt_docroot           |   1   |
+|                           ET WEB_SPECIFIC_APPS Vulnerable Magento Adminhtml Access                           |   6   |
+|                  ET WEB_SPECIFIC_APPS WBBlog SQL Injection Attempt -- index.php e_id SELECT                  |   1   |
+|                               ET WEB_SPECIFIC_APPS WEB-PHP RCE PHPBB 2004-1315                               |   4   |
+|             ET WEB_SPECIFIC_APPS iWare Professional SQL Injection Attempt -- index.php D SELECT              |   4   |
+|                                           GPL EXPLOIT .cnf access                                            |  11   |
+|                                           GPL EXPLOIT .htr access                                            |   7   |
+|                                   GPL EXPLOIT /iisadmpwd/aexp2.htr access                                    |   1   |
+|                                      GPL EXPLOIT /msadc/samples/ access                                      |   3   |
+|                                    GPL EXPLOIT CodeRed v2 root.exe access                                    |   1   |
+|                                        GPL EXPLOIT ISAPI .ida access                                         |   2   |
+|                                        GPL EXPLOIT ISAPI .idq access                                         |  12   |
+|                                        GPL EXPLOIT ISAPI .idq attempt                                        |   6   |
+|                                    GPL EXPLOIT administrators.pwd access                                     |   1   |
+|                                         GPL EXPLOIT formmail access                                          |   2   |
+|                                          GPL EXPLOIT fpcount access                                          |   4   |
+|                                        GPL EXPLOIT iisadmpwd attempt                                         |   5   |
+|                                        GPL EXPLOIT iissamples access                                         |  28   |
+|                               GPL EXPLOIT unicode directory traversal attempt                                |  10   |
+|                                 GPL POLICY TRAFFIC Non-Standard IP protocol                                  |  12   |
+|                                       GPL WEB_SERVER .htaccess access                                        |   6   |
+|                                       GPL WEB_SERVER .htpasswd access                                        |   2   |
+|                                       GPL WEB_SERVER /_vti_bin/ access                                       |  64   |
+|                                    GPL WEB_SERVER /bin/ls command attempt                                    |   1   |
+|                                          GPL WEB_SERVER /etc/passwd                                          |  268  |
+|                                  GPL WEB_SERVER /usr/bin/id command attempt                                  |   4   |
+|                                         GPL WEB_SERVER /~ftp access                                          |   1   |
+|                                        GPL WEB_SERVER /~nobody access                                        |   1   |
+|                                         GPL WEB_SERVER /~root access                                         |   2   |
+|                                       GPL WEB_SERVER IISProtect access                                       |   1   |
+|                                     GPL WEB_SERVER ISAPI .printer access                                     |   1   |
+|                              GPL WEB_SERVER Oracle Java Process Manager access                               |   1   |
+|                                          GPL WEB_SERVER SAM Attempt                                          |   5   |
+|                                  GPL WEB_SERVER Tomcat server snoop access                                   |   1   |
+|                                GPL WEB_SERVER WEBDAV nessus safe scan attempt                                |   1   |
+|                                        GPL WEB_SERVER _vti_rpc access                                        |   4   |
+|                              GPL WEB_SERVER apache directory disclosure attempt                              |   6   |
+|                                 GPL WEB_SERVER apache source.asp file access                                 |   1   |
+|                                       GPL WEB_SERVER author.exe access                                       |   2   |
+|                                      GPL WEB_SERVER authors.pwd access                                       |   1   |
+|                                       GPL WEB_SERVER global.asa access                                       |   2   |
+|                                       GPL WEB_SERVER global.inc access                                       |   3   |
+|                                       GPL WEB_SERVER globals.pl access                                       |   1   |
+|                                        GPL WEB_SERVER iisadmin access                                        |   3   |
+|                                    GPL WEB_SERVER mod_gzip_status access                                     |   1   |
+|                                       GPL WEB_SERVER msadcs.dll access                                       |   1   |
+|                                        GPL WEB_SERVER printenv access                                        |   2   |
+|                                      GPL WEB_SERVER service.cnf access                                       |   1   |
+|                                          GPL WEB_SERVER service.pwd                                          |   1   |
+|                                      GPL WEB_SERVER services.cnf access                                      |   1   |
+|                              GPL WEB_SERVER unicode directory traversal attempt                              |  14   |
+|                                        GPL WEB_SERVER viewcode access                                        |   2   |
+|                                       GPL WEB_SERVER webalizer access                                        |   1   |
+|                                      GPL WEB_SERVER writeto.cnf access                                       |   1   |
+|                     GPL WEB_SPECIFIC_APPS oracle web arbitrary command execution attempt                     |   1   |
+|                             SURICATA Applayer Detect protocol only one direction                             |  18   |
+|                                     SURICATA HTTP Host header ambiguous                                      |   4   |
+|                           SURICATA HTTP URI terminated by non-compliant character                            |   2   |
+|                                    SURICATA HTTP Unexpected Request body                                     |  13   |
+|                                  SURICATA HTTP request field missing colon                                   |  20   |
+|                                     SURICATA HTTP request header invalid                                     |   1   |
+|                          TGI HUNT directory traversal chars in HTTP Request Header                           |   1   |
+|                                         TGI HUNT gitrepo HTTP Probe                                          |   1   |
++--------------------------------------------------------------------------------------------------------------+-------+

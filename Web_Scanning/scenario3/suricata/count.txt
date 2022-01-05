@@ -1,0 +1,41 @@
++-------------------------------------------------------------------------------------------+-------+
+|                                           Rules                                           | Count |
++-------------------------------------------------------------------------------------------+-------+
+| ATTACK [PTsecurity] Likely Apache HTTP Server 2.4.49 Directory Traversal (CVE-2021-41773) |   2   |
+|               ET EXPLOIT F5 TMUI RCE vulnerability CVE-2020-5902 Attempt M1               |   1   |
+|            ET EXPLOIT VMware Spring Cloud Directory Traversal (CVE-2020-5410)             |   3   |
+|    ET HUNTING Possible ELF executable sent when remote host claims to send a Text File    |   1   |
+|           ET POLICY Executable and linking format (ELF) file download Over HTTP           |   1   |
+|                      ET POLICY HTTP GET invalid method case outbound                      |   1   |
+|                      ET POLICY JBOSS/JMX port 80 access from outside                      |   1   |
+|                                ET POLICY Proxy GET Request                                |   7   |
+|                      ET POLICY exe download via HTTP - Informational                      |   9   |
+|                     ET SCAN Apache mod_proxy Reverse Proxy Exposure 1                     |  856  |
+|                           ET SCAN HTTP GET invalid method case                            |   1   |
+|              ET WEB_SERVER PHP Easteregg Information-Disclosure (funny-logo)              |   1   |
+|               ET WEB_SERVER PHP Easteregg Information-Disclosure (php-logo)               |   1   |
+|               ET WEB_SERVER PHP Easteregg Information-Disclosure (phpinfo)                |   1   |
+|              ET WEB_SERVER PHP Easteregg Information-Disclosure (zend-logo)               |   1   |
+|                              ET WEB_SERVER Poison Null Byte                               |  18   |
+|          ET WEB_SERVER Possible Usage of MYSQL Comments in URI for SQL Injection          |   3   |
+|           ET WEB_SERVER Script tag in URI Possible Cross Site Scripting Attempt           |   3   |
+|                           ET WEB_SERVER WEB-PHP phpinfo access                            |   4   |
+|             ET WEB_SPECIFIC_APPS PHP-CGI query string parameter vulnerability             |   1   |
+|                            GPL EXPLOIT /msadc/samples/ access                             |   2   |
+|                               GPL EXPLOIT ISAPI .idq access                               |   1   |
+|                              GPL EXPLOIT ISAPI .idq attempt                               |   1   |
+|                                GPL EXPLOIT formmail access                                |   1   |
+|                               GPL EXPLOIT iissamples access                               |  10   |
+|                      GPL EXPLOIT unicode directory traversal attempt                      |   3   |
+|                        GPL POLICY TRAFFIC Non-Standard IP protocol                        |  23   |
+|                             GPL WEB_SERVER /_vti_bin/ access                              |   8   |
+|                                GPL WEB_SERVER /etc/passwd                                 |  49   |
+|                    GPL WEB_SERVER apache directory disclosure attempt                     |   5   |
+|                             GPL WEB_SERVER author.exe access                              |   1   |
+|                    GPL WEB_SERVER unicode directory traversal attempt                     |  14   |
+|                   SURICATA Applayer Detect protocol only one direction                    |  15   |
+|                           SURICATA HTTP Request line incomplete                           | 6274  |
+|                           SURICATA HTTP Unexpected Request body                           |   1   |
+|                     SURICATA HTTP unable to match response to request                     | 5858  |
+|                                TGI HUNT gitrepo HTTP Probe                                |   1   |
++-------------------------------------------------------------------------------------------+-------+

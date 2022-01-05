@@ -1,0 +1,38 @@
+------------------------------------------------------------------------------------
+Date: 12/9/2021 -- 16:09:05 (uptime: 0d, 00h 00m 55s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+decoder.pkts                                  | Total                     | 2994
+decoder.bytes                                 | Total                     | 306420
+decoder.ipv4                                  | Total                     | 2717
+decoder.ipv6                                  | Total                     | 275
+decoder.ethernet                              | Total                     | 2994
+decoder.tcp                                   | Total                     | 2805
+decoder.icmpv6                                | Total                     | 52
+decoder.avg_pkt_size                          | Total                     | 102
+decoder.max_pkt_size                          | Total                     | 562
+flow.tcp                                      | Total                     | 200
+flow.icmpv6                                   | Total                     | 14
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 4
+decoder.event.ipv6.unknown_next_header        | Total                     | 23
+flow.wrk.flows_evicted_needs_work             | Total                     | 67
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 67
+flow.wrk.flows_evicted                        | Total                     | 5
+flow.wrk.flows_injected                       | Total                     | 67
+tcp.sessions                                  | Total                     | 200
+tcp.syn                                       | Total                     | 200
+tcp.synack                                    | Total                     | 100
+tcp.rst                                       | Total                     | 100
+detect.alert                                  | Total                     | 218
+app_layer.flow.http                           | Total                     | 100
+app_layer.tx.http                             | Total                     | 100
+flow.mgr.full_hash_pass                       | Total                     | 1
+flow.spare                                    | Total                     | 9600
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 7
+flow.mgr.flows_notimeout                      | Total                     | 7
+tcp.memuse                                    | Total                     | 2293760
+tcp.reassembly_memuse                         | Total                     | 393216
+flow.memuse                                   | Total                     | 7394304

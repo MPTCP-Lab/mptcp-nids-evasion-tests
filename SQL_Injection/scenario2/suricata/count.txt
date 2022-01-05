@@ -1,0 +1,7 @@
++--------------------------------------------------------------------------------------+-------+
+|                                        Rules                                         | Count |
++--------------------------------------------------------------------------------------+-------+
+| ET WEB_SERVER Possible Attempt to Get SQL Server Version in URI using SELECT VERSION |  100  |
+|              ET WEB_SERVER Possible SQL Injection Attempt UNION SELECT               |  100  |
+|                     GPL POLICY TRAFFIC Non-Standard IP protocol                      |  18   |
++--------------------------------------------------------------------------------------+-------+

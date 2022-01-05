@@ -1,0 +1,44 @@
+[nodes]
+
+[nodes.A]
+model = "PC"
+
+[nodes.r1]
+services = ["SSH", "zebra", "OSPFv2", "OSPFv3", "IPForward"]
+
+[nodes.r2]
+
+[nodes.r3]
+
+[nodes.r4]
+
+[nodes.T]
+model = "PC"
+
+[links]
+
+[links.1]
+node1 = "A"
+node2 = "r1"
+use_mptcp = false
+
+[links.2]
+node1 = "r1"
+node2 = "r2"
+
+[links.3]
+node1 = "r2"
+node2 = "r3"
+
+[links.4]
+node1 = "r2"
+node2 = "r4"
+
+[links.5]
+node1 = "r3"
+node2 = "T"
+
+[links.6]
+node1 = "r4"
+node2 = "T"
+
