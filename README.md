@@ -23,7 +23,7 @@ The machine used for the tests was running `Linux Kernel 5.14`.
 
 The MPTCP configurations and the topologies were created using [mptcp_test_bed](https://github.com/RuiCunhaM/mptcp_test_bed).
 
-As for the web server, that acted as the target of the attacks, a [small altered version](https://github.com/RuiCunhaM/mini_httpd/tree/mptcp-detailed-logs) of [mini_httpd](https://github.com/peter-leonov/mini_httpd) was used in order to support MPTCP.
+As for the web server, that acted as the target of the attacks, a [small altered version](https://github.com/MPTCP-Lab/mini_httpd_mptcp) of [mini_httpd](https://acme.com/software/mini_httpd/) was used in order to support MPTCP.
 
 For each individual test it's possible to consult a variety of data:
   - Topology configuration files
