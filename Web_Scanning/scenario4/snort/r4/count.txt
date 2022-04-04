@@ -1,16 +1,24 @@
-+--------------------------------------------------------------------------+--------+
-|                                  Rules                                   | Count  |
-+--------------------------------------------------------------------------+--------+
-|                 (http_inspect) misformatted HTTP traffic                 |   3    |
-|                     (http_inspect) not HTTP traffic                      |   14   |
-|                (http_inspect) request message without URI                |   2    |
-|                      (http_inspect) unknown method                       |   2    |
-| (ipv6) IPv6 header includes an invalid value for the 'next header' field |  430   |
-|                   (tcp) experimental TCP options found                   | 119915 |
-|                       SERVER-IIS ASP contents view                       |   1    |
-|       SERVER-IIS Microsoft Windows IIS directory traversal attempt       |   25   |
-|                     SERVER-IIS scripts-browse access                     |   1    |
-|                        SERVER-WEBAPP /.... access                        |   26   |
-|             SERVER-WEBAPP Novell Groupwise gwweb.exe access              |   2    |
-|               SERVER-WEBAPP PHPLIB remote command attempt                |   3    |
-+--------------------------------------------------------------------------+--------+
++---------------+--------+
+|   Priority    | Count  |
++---------------+--------+
+| [Priority: 1] |   30   |
+| [Priority: 2] |   28   |
+| [Priority: 3] | 120366 |
++---------------+--------+
+
++----------------------------------------------------------------------------------------+--------+
+|                                         Rules                                          | Count  |
++----------------------------------------------------------------------------------------+--------+
+|                   (tcp) experimental TCP options found [Priority: 3]                   | 119915 |
+| (ipv6) IPv6 header includes an invalid value for the 'next header' field [Priority: 3] |  430   |
+|                        SERVER-WEBAPP /.... access [Priority: 2]                        |   26   |
+|       SERVER-IIS Microsoft Windows IIS directory traversal attempt [Priority: 1]       |   25   |
+|                     (http_inspect) not HTTP traffic [Priority: 3]                      |   14   |
+|               SERVER-WEBAPP PHPLIB remote command attempt [Priority: 1]                |   3    |
+|                 (http_inspect) misformatted HTTP traffic [Priority: 3]                 |   3    |
+|                (http_inspect) request message without URI [Priority: 3]                |   2    |
+|                      (http_inspect) unknown method [Priority: 3]                       |   2    |
+|             SERVER-WEBAPP Novell Groupwise gwweb.exe access [Priority: 2]              |   2    |
+|                       SERVER-IIS ASP contents view [Priority: 1]                       |   1    |
+|                     SERVER-IIS scripts-browse access [Priority: 1]                     |   1    |
++----------------------------------------------------------------------------------------+--------+

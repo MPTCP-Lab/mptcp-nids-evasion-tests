@@ -1,7 +1,15 @@
-+--------------------------------------------------------------------------------------+-------+
-|                                        Rules                                         | Count |
-+--------------------------------------------------------------------------------------+-------+
-| ET WEB_SERVER Possible Attempt to Get SQL Server Version in URI using SELECT VERSION |  100  |
-|              ET WEB_SERVER Possible SQL Injection Attempt UNION SELECT               |  100  |
-|                     GPL POLICY TRAFFIC Non-Standard IP protocol                      |  18   |
-+--------------------------------------------------------------------------------------+-------+
++---------------+-------+
+|   Priority    | Count |
++---------------+-------+
+| [Priority: 1] |  200  |
+| [Priority: 2] |  18   |
+| [Priority: 3] |   0   |
++---------------+-------+
+
++----------------------------------------------------------------------------------------------------+-------+
+|                                               Rules                                                | Count |
++----------------------------------------------------------------------------------------------------+-------+
+|              ET WEB_SERVER Possible SQL Injection Attempt UNION SELECT [Priority: 1]               |  100  |
+| ET WEB_SERVER Possible Attempt to Get SQL Server Version in URI using SELECT VERSION [Priority: 1] |  100  |
+|                     GPL POLICY TRAFFIC Non-Standard IP protocol [Priority: 2]                      |  18   |
++----------------------------------------------------------------------------------------------------+-------+

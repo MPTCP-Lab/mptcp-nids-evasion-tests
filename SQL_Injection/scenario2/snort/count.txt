@@ -1,9 +1,17 @@
-+--------------------------------------------------------------------------+-------+
-|                                  Rules                                   | Count |
-+--------------------------------------------------------------------------+-------+
-| (ipv6) IPv6 header includes an invalid value for the 'next header' field |  23   |
-|                         (port_scan) TCP portscan                         |   2   |
-|                   (tcp) experimental TCP options found                   | 2705  |
-|            PROTOCOL-ICMP IPv6 multicast neighbor add attempt             |  22   |
-|    SQL union select - possible sql injection attempt - GET parameter     |  100  |
-+--------------------------------------------------------------------------+-------+
++---------------+-------+
+|   Priority    | Count |
++---------------+-------+
+| [Priority: 1] |   0   |
+| [Priority: 2] |  100  |
+| [Priority: 3] | 2752  |
++---------------+-------+
+
++----------------------------------------------------------------------------------------+-------+
+|                                         Rules                                          | Count |
++----------------------------------------------------------------------------------------+-------+
+|                   (tcp) experimental TCP options found [Priority: 3]                   | 2705  |
+|    SQL union select - possible sql injection attempt - GET parameter [Priority: 2]     |  100  |
+| (ipv6) IPv6 header includes an invalid value for the 'next header' field [Priority: 3] |  23   |
+|            PROTOCOL-ICMP IPv6 multicast neighbor add attempt [Priority: 3]             |  22   |
+|                         (port_scan) TCP portscan [Priority: 3]                         |   2   |
++----------------------------------------------------------------------------------------+-------+

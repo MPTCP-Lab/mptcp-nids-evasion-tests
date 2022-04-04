@@ -1,10 +1,18 @@
-+--------------------------------------------------------------------------+-------+
-|                                  Rules                                   | Count |
-+--------------------------------------------------------------------------+-------+
-|                     (http_inspect) not HTTP traffic                      |  100  |
-|           (http_inspect) server response before client request           |  100  |
-| (ipv6) IPv6 header includes an invalid value for the 'next header' field |  24   |
-|                         (port_scan) TCP portscan                         |   3   |
-|                   (tcp) experimental TCP options found                   | 3837  |
-|            PROTOCOL-ICMP IPv6 multicast neighbor add attempt             |  27   |
-+--------------------------------------------------------------------------+-------+
++---------------+-------+
+|   Priority    | Count |
++---------------+-------+
+| [Priority: 1] |   0   |
+| [Priority: 2] |   0   |
+| [Priority: 3] | 4091  |
++---------------+-------+
+
++----------------------------------------------------------------------------------------+-------+
+|                                         Rules                                          | Count |
++----------------------------------------------------------------------------------------+-------+
+|                   (tcp) experimental TCP options found [Priority: 3]                   | 3837  |
+|           (http_inspect) server response before client request [Priority: 3]           |  100  |
+|                     (http_inspect) not HTTP traffic [Priority: 3]                      |  100  |
+|            PROTOCOL-ICMP IPv6 multicast neighbor add attempt [Priority: 3]             |  27   |
+| (ipv6) IPv6 header includes an invalid value for the 'next header' field [Priority: 3] |  24   |
+|                         (port_scan) TCP portscan [Priority: 3]                         |   3   |
++----------------------------------------------------------------------------------------+-------+
