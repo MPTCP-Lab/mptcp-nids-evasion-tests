@@ -1,0 +1,172 @@
++---------------+-----------+------------------+-------------------+
+|  Priorities   | Baseline1 |    Baseline2     |   Test Scenario   |
++---------------+-----------+------------------+-------------------+
+| [Priority: 1] |    871    |   869 (-0.23%)   |   53 (-93.92%)    |
+| [Priority: 2] |   1546    |  1556 (+0.65%)   |   978 (-36.74%)   |
+| [Priority: 3] |    58     | 3014 (+5096.55%) | 12064 (+20700.0%) |
++---------------+-----------+------------------+-------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+-----------+-----------------+-----------------+
+|                                                                  Rules                                                                   | Baseline1 |    Baseline2    |  Test Scenario  |
++------------------------------------------------------------------------------------------------------------------------------------------+-----------+-----------------+-----------------+
+|              [1:10000035:4] ATTACK [PTsecurity] Mismatch URI and Host header. Possible Squid cache poisoning [Priority: 2]               |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                      [1:10004953:2] ATTACK [PTsecurity] Apache Tomcat RCE on Windows (CVE-2019-0232) [Priority: 1]                       |     3     |    3 (0.0%)     |   0 (-100.0%)   |
+|          [1:10006811:2] ATTACK [PTsecurity] Likely Apache HTTP Server 2.4.49 Directory Traversal (CVE-2021-41773) [Priority: 1]          |     4     |    4 (0.0%)     |   2 (-50.0%)    |
+|                              [1:2001218:11] ET WEB_SPECIFIC_APPS PHPNuke general XSS attempt [Priority: 1]                               |    20     |    20 (0.0%)    |   0 (-100.0%)   |
+|                       [1:2001343:22] ET WEB_SERVER IIS ASP.net Auth Bypass / Canonicalization % 5 C [Priority: 1]                        |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                         [1:2001669:8] ET POLICY Proxy GET Request [Priority: 2]                                          |     7     |    7 (0.0%)     |    7 (0.0%)     |
+|                [1:2001949:11] ET WEB_SPECIFIC_APPS Athena Web Registration Remote Command Execution Attempt [Priority: 1]                |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                          [1:2002133:10] ET WEB_SERVER Oracle Reports OS Command Injection Attempt [Priority: 2]                          |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                        [1:2003099:7] ET WEB_SERVER Poison Null Byte [Priority: 2]                                        |    107    |   107 (0.0%)    |  17 (-84.11%)   |
+|                                  [1:2003179:10] ET POLICY exe download without User Agent [Priority: 1]                                  |    74     |    74 (0.0%)    |   0 (-100.0%)   |
+|                               [1:2003595:6] ET POLICY exe download via HTTP - Informational [Priority: 1]                                |    151    |   151 (0.0%)    |   9 (-94.04%)   |
+|         [1:2003677:6] ET WEB_SPECIFIC_APPS Berylium2 Remote Inclusion Attempt -- berylium-classes.php beryliumroot [Priority: 1]         |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                   [1:2003694:4] ET WEB_SPECIFIC_APPS NoAH Remote Inclusion Attempt -- mfa_theme.php tpls [Priority: 1]                   |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                      [1:2003704:7] ET WEB_SPECIFIC_APPS AForum Remote Inclusion func.php CommonAbsDir [Priority: 1]                      |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                [1:2003705:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion site_conf.php ordnertiefe [Priority: 1]                |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                [1:2003706:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion class.csv.php tt_docroot [Priority: 1]                 |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|           [1:2003707:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion produkte_nach_serie.php tt_docroot [Priority: 1]            |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|              [1:2003708:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion ref_kd_rubrik.php tt_docroot [Priority: 1]               |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|          [1:2003709:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion hg_referenz_jobgalerie.php tt_docroot [Priority: 1]          |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|           [1:2003710:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion surfer_anmeldung_NWL.php tt_docroot [Priority: 1]           |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|         [1:2003711:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion produkte_nach_serie_alle.php tt_docroot [Priority: 1]         |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|              [1:2003712:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion surfer_aendern.php tt_docroot [Priority: 1]              |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                 [1:2003713:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion referenz.php tt_docroot [Priority: 1]                 |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                   [1:2003714:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion lay.php tt_docroot [Priority: 1]                    |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|              [1:2003715:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion ref_kd_rubrik.php tt_docroot [Priority: 1]               |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|             [1:2003738:6] ET WEB_SPECIFIC_APPS Beacon Remote Inclusion Attempt -- splash.lang.php languagePath [Priority: 1]             |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                  [1:2003867:5] ET WEB_SPECIFIC_APPS TellTarget CMS Remote Inclusion 3_lay.php tt_docroot [Priority: 1]                   |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                [1:2003957:8] ET WEB_SPECIFIC_APPS Jetbox CMS SQL Injection Attempt -- index.php view SELECT [Priority: 1]                |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                  [1:2004313:6] ET WEB_SPECIFIC_APPS WBBlog SQL Injection Attempt -- index.php e_id SELECT [Priority: 1]                  |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                         [1:2004589:4] ET WEB_SPECIFIC_APPS PsychoStats XSS Attempt -- register.php [Priority: 1]                         |     3     |    3 (0.0%)     |   0 (-100.0%)   |
+|                      [1:2004592:6] ET WEB_SPECIFIC_APPS Jelsoft vBulletin XSS Attempt -- calendar.php [Priority: 1]                      |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                          [1:2006445:14] ET WEB_SERVER Possible SQL Injection Attempt SELECT FROM [Priority: 1]                           |     6     |    6 (0.0%)     |   0 (-100.0%)   |
+|                          [1:2006446:14] ET WEB_SERVER Possible SQL Injection Attempt UNION SELECT [Priority: 1]                          |     3     |    3 (0.0%)     |   0 (-100.0%)   |
+|             [1:2006609:7] ET WEB_SPECIFIC_APPS iWare Professional SQL Injection Attempt -- index.php D SELECT [Priority: 1]              |     4     |    4 (0.0%)     |   0 (-100.0%)   |
+|                              [1:2009001:4] ET POLICY Login Credentials Possibly Passed in URI [Priority: 1]                              |     5     |    5 (0.0%)     |   0 (-100.0%)   |
+|                         [1:2009151:8] ET WEB_SERVER PHP Generic Remote File Include Attempt (HTTP) [Priority: 1]                         |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                      [1:2009361:8] ET WEB_SERVER cmd.exe In URI - Possible Command Execution Attempt [Priority: 2]                       |    22     |    22 (0.0%)    |   0 (-100.0%)   |
+|                [1:2009362:7] ET WEB_SERVER /system32/ in Uri - Possible Protected Directory Access Attempt [Priority: 2]                 |    26     |    26 (0.0%)    |   0 (-100.0%)   |
+|                                  [1:2009485:7] ET WEB_SERVER /etc/shadow Detected in URI [Priority: 2]                                   |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                    [1:2009714:8] ET WEB_SERVER Script tag in URI Possible Cross Site Scripting Attempt [Priority: 1]                     |    299    |   299 (0.0%)    |   2 (-99.33%)   |
+|                [1:2009955:15] ET WEB_SERVER Tilde in URI - potential .php~ source disclosure vulnerability [Priority: 1]                 |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                               [1:2010377:6] ET POLICY JBOSS/JMX port 80 access from outside [Priority: 1]                                |     2     |    2 (0.0%)     |   1 (-50.0%)    |
+|                         [1:2010920:9] ET WEB_SERVER Exploit Suspected PHP Injection Attack (cmd=) [Priority: 1]                          |    40     |    40 (0.0%)    |   0 (-100.0%)   |
+|                            [1:2010963:7] ET WEB_SERVER SELECT USER SQL Injection Attempt in URI [Priority: 1]                            |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2011031:4] ET SCAN HTTP GET invalid method case [Priority: 2]                                     |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                   [1:2011040:3] ET WEB_SERVER Possible Usage of MYSQL Comments in URI for SQL Injection [Priority: 1]                    |     3     |    3 (0.0%)     |    3 (0.0%)     |
+|                           [1:2011042:6] ET WEB_SERVER MYSQL SELECT CONCAT SQL Injection Attempt [Priority: 1]                            |     4     |    4 (0.0%)     |   0 (-100.0%)   |
+|                         [1:2011141:5] ET WEB_SERVER PHP Easteregg Information-Disclosure (phpinfo) [Priority: 2]                         |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                        [1:2011142:6] ET WEB_SERVER PHP Easteregg Information-Disclosure (php-logo) [Priority: 2]                         |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                        [1:2011143:6] ET WEB_SERVER PHP Easteregg Information-Disclosure (zend-logo) [Priority: 2]                        |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                       [1:2011144:6] ET WEB_SERVER PHP Easteregg Information-Disclosure (funny-logo) [Priority: 2]                        |     1     |    1 (0.0%)     |    1 (0.0%)     |
+| [1:2011696:6] ET WEB_SPECIFIC_APPS Possible JBoss JMX Console Beanshell Deployer WAR Upload and Deployment Exploit Attempt [Priority: 1] |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                    [1:2012373:5] ET WEB_SPECIFIC_APPS Horde type Parameter Local File Inclusion Attempt [Priority: 1]                    |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                            [1:2012888:4] ET POLICY Http Client Body contains pwd= in cleartext [Priority: 1]                             |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                  [1:2012911:2] ET POLICY URL Contains password Parameter [Priority: 1]                                   |    10     |    10 (0.0%)    |   0 (-100.0%)   |
+|                                    [1:2012913:2] ET POLICY URL Contains pass Parameter [Priority: 1]                                     |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2012914:2] ET POLICY URL Contains pwd Parameter [Priority: 1]                                     |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                        [1:2012997:4] ET WEB_SERVER PHP Possible http Remote File Inclusion Attempt [Priority: 1]                         |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                              [1:2013791:4] ET SCAN Apache mod_proxy Reverse Proxy Exposure 1 [Priority: 2]                               |    872    |   872 (0.0%)    |  856 (-1.83%)   |
+|                               [1:2014379:2] ET POLICY HTTP GET invalid method case outbound [Priority: 2]                                |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                      [1:2014704:8] ET WEB_SPECIFIC_APPS PHP-CGI query string parameter vulnerability [Priority: 1]                       |     4     |    4 (0.0%)     |   1 (-75.0%)    |
+|                                   [1:2015523:4] ET MALWARE Pakes2 - Checkin - /test.php [Priority: 1]                                    |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                           [1:2015940:4] ET SCAN SFTP/FTP Password Exposure via sftp-config.json [Priority: 2]                            |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                              [1:2016141:7] ET INFO Executable Download from dotted-quad Host [Priority: 1]                               |    73     |    73 (0.0%)    |   0 (-100.0%)   |
+|                                [1:2016182:7] ET WEB_SERVER ColdFusion componentutils access [Priority: 1]                                |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                [1:2016184:6] ET WEB_SERVER ColdFusion administrator access [Priority: 1]                                 |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                 [1:2017436:4] ET WEB_SERVER PHP SERVER SuperGlobal in URI [Priority: 2]                                  |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                 [1:2017440:4] ET WEB_SERVER PHP SESSION SuperGlobal in URI [Priority: 2]                                 |     6     |    6 (0.0%)     |   0 (-100.0%)   |
+|                                 [1:2017441:4] ET WEB_SERVER PHP REQUEST SuperGlobal in URI [Priority: 2]                                 |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                   [1:2017442:4] ET WEB_SERVER PHP ENV SuperGlobal in URI [Priority: 2]                                   |    17     |    17 (0.0%)    |   0 (-100.0%)   |
+|                     [1:2017808:3] ET WEB_SERVER Possible MySQL SQLi Attempt Information Schema Access [Priority: 1]                      |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                    [1:2019240:14] ET POLICY Executable and linking format (ELF) file download Over HTTP [Priority: 1]                    |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                                     [1:2019526:5] ET WEB_SERVER WEB-PHP phpinfo access [Priority: 2]                                     |     9     |    9 (0.0%)     |   4 (-55.56%)   |
+|            [1:2019714:12] ET MALWARE Terse alphanumeric executable downloader high likelihood of being hostile [Priority: 2]             |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                  [1:2020296:4] ET MALWARE Scieron Retrieving Information [Priority: 1]                                   |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                           [1:2021005:3] ET WEB_SPECIFIC_APPS Vulnerable Magento Adminhtml Access [Priority: 1]                           |     6     |    6 (0.0%)     |   0 (-100.0%)   |
+|                               [1:2021390:3] ET WEB_SPECIFIC_APPS WEB-PHP RCE PHPBB 2004-1315 [Priority: 1]                               |     4     |    4 (0.0%)     |   0 (-100.0%)   |
+|        [1:2021992:3] ET WEB_SPECIFIC_APPS Possible Joomla SQLi Attempt (CVE-2015-7297 CVE-2015-7857 CVE-2015-7858) [Priority: 1]         |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                   [1:2022039:3] ET WEB_CLIENT Possible vBulletin object injection vulnerability Attempt [Priority: 1]                    |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                      [1:2022657:4] ET MALWARE IrcBot Downloading .old [Priority: 1]                                      |     6     |    6 (0.0%)     |   0 (-100.0%)   |
+|                              [1:2025756:3] ET EXPLOIT D-Link DSL-2750B - OS Command Injection [Priority: 1]                              |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2025883:3] ET EXPLOIT MVPower DVR Shell UCE [Priority: 1]                                       |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2027250:4] ET INFO Dotted Quad Host DLL Request [Priority: 2]                                     |    21     |    21 (0.0%)    |   0 (-100.0%)   |
+|                                     [1:2027253:4] ET INFO Dotted Quad Host XLS Request [Priority: 2]                                     |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2027262:4] ET INFO Dotted Quad Host ZIP Request [Priority: 2]                                     |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2027263:4] ET INFO Dotted Quad Host GZ Request [Priority: 2]                                      |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2027265:4] ET INFO Dotted Quad Host PDF Request [Priority: 2]                                     |    11     |    11 (0.0%)    |   0 (-100.0%)   |
+|                     [1:2027883:3] ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379) [Priority: 1]                     |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+| [1:2029206:4] ET EXPLOIT Possible Citrix Application Delivery Controller Arbitrary Code Execution Attempt (CVE-2019-19781) [Priority: 1] |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                      [1:2030337:1] ET EXPLOIT VMware Spring Cloud Directory Traversal (CVE-2020-5410) [Priority: 1]                      |     4     |    4 (0.0%)     |   3 (-25.0%)    |
+|                        [1:2030469:5] ET EXPLOIT F5 TMUI RCE vulnerability CVE-2020-5902 Attempt M1 [Priority: 1]                         |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                        [1:2030483:2] ET EXPLOIT F5 TMUI RCE vulnerability CVE-2020-5902 Attempt M2 [Priority: 1]                         |     1     |   0 (-100.0%)   |   0 (-100.0%)   |
+|                                  [1:2031502:1] ET INFO Request to Hidden Environment File [Priority: 2]                                  |     1     |   0 (-100.0%)   |   0 (-100.0%)   |
+|             [1:2032973:1] ET HUNTING Possible ELF executable sent when remote host claims to send a Text File [Priority: 2]              |     1     |    1 (0.0%)     |    1 (0.0%)     |
+|                [1:2033089:1] ET EXPLOIT Cisco RV320/RV325 Config Disclosure Attempt Inbound (CVE-2019-1653) [Priority: 1]                |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|          [1:2034005:1] ET EXPLOIT Fortinet FortiOS/FortiProxy SSL VPN Web Portal Path Traversal (CVE-2018-13379) [Priority: 1]           |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                 [1:2034253:2] ET SCAN FTPSync Settings Disclosure Attempt [Priority: 2]                                  |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                         [1:2100884:17] GPL EXPLOIT formmail access [Priority: 2]                                         |     2     |    2 (0.0%)     |   1 (-50.0%)    |
+|                                       [1:2100937:13] GPL WEB_SERVER _vti_rpc access [Priority: 2]                                        |     4     |    4 (0.0%)     |   0 (-100.0%)   |
+|                                      [1:2100951:14] GPL WEB_SERVER authors.pwd access [Priority: 2]                                      |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                      [1:2100952:10] GPL WEB_SERVER author.exe access [Priority: 2]                                       |     2     |    2 (0.0%)     |   1 (-50.0%)    |
+|                                    [1:2100953:10] GPL EXPLOIT administrators.pwd access [Priority: 2]                                    |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                      [1:2100958:13] GPL WEB_SERVER service.cnf access [Priority: 2]                                      |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                         [1:2100959:10] GPL WEB_SERVER service.pwd [Priority: 2]                                          |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2100961:13] GPL WEB_SERVER services.cnf access [Priority: 2]                                      |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                      [1:2100965:13] GPL WEB_SERVER writeto.cnf access [Priority: 2]                                      |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                    [1:2100971:13] GPL WEB_SERVER ISAPI .printer access [Priority: 2]                                     |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                           [1:2100977:15] GPL EXPLOIT .cnf access [Priority: 2]                                           |    11     |    11 (0.0%)    |   0 (-100.0%)   |
+|                               [1:2100981:15] GPL EXPLOIT unicode directory traversal attempt [Priority: 1]                               |     8     |    8 (0.0%)     |   1 (-87.5%)    |
+|                               [1:2100982:12] GPL EXPLOIT unicode directory traversal attempt [Priority: 1]                               |     2     |    2 (0.0%)     |    2 (0.0%)     |
+|                                           [1:2100987:17] GPL EXPLOIT .htr access [Priority: 2]                                           |     7     |    7 (0.0%)     |   0 (-100.0%)   |
+|                                          [1:2100988:9] GPL WEB_SERVER SAM Attempt [Priority: 1]                                          |     5     |    5 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2100993:14] GPL WEB_SERVER iisadmin access [Priority: 1]                                        |     3     |    3 (0.0%)     |   0 (-100.0%)   |
+|                                         [1:2101013:12] GPL EXPLOIT fpcount access [Priority: 2]                                          |     4     |    4 (0.0%)     |   0 (-100.0%)   |
+|                                      [1:2101016:16] GPL WEB_SERVER global.asa access [Priority: 2]                                       |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                        [1:2101018:13] GPL EXPLOIT iisadmpwd attempt [Priority: 1]                                        |     5     |   4 (-20.0%)    |   0 (-100.0%)   |
+|                                      [1:2101023:13] GPL WEB_SERVER msadcs.dll access [Priority: 2]                                       |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2101071:8] GPL WEB_SERVER .htpasswd access [Priority: 1]                                        |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                  [1:2101108:14] GPL WEB_SERVER Tomcat server snoop access [Priority: 2]                                  |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                [1:2101110:12] GPL WEB_SERVER apache source.asp file access [Priority: 2]                                 |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                          [1:2101122:8] GPL WEB_SERVER /etc/passwd [Priority: 2]                                          |    268    |   268 (0.0%)    |  48 (-82.09%)   |
+|                                       [1:2101129:9] GPL WEB_SERVER .htaccess access [Priority: 2]                                        |     6     |    6 (0.0%)     |   0 (-100.0%)   |
+|                                        [1:2101145:11] GPL WEB_SERVER /~root access [Priority: 2]                                         |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                             [1:2101156:12] GPL WEB_SERVER apache directory disclosure attempt [Priority: 2]                              |     6     |    6 (0.0%)     |   5 (-16.67%)   |
+|                    [1:2101193:13] GPL WEB_SPECIFIC_APPS oracle web arbitrary command execution attempt [Priority: 1]                     |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                        [1:2101242:14] GPL EXPLOIT ISAPI .ida access [Priority: 2]                                        |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2101244:17] GPL EXPLOIT ISAPI .idq attempt [Priority: 1]                                        |     6     |    6 (0.0%)     |   1 (-83.33%)   |
+|                                        [1:2101245:13] GPL EXPLOIT ISAPI .idq access [Priority: 2]                                        |    12     |    12 (0.0%)    |   1 (-91.67%)   |
+|                                   [1:2101256:11] GPL EXPLOIT CodeRed v2 root.exe access [Priority: 1]                                    |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                      [1:2101288:12] GPL WEB_SERVER /_vti_bin/ access [Priority: 2]                                       |    64     |    64 (0.0%)    |   7 (-89.06%)   |
+|                                  [1:2101332:8] GPL WEB_SERVER /usr/bin/id command attempt [Priority: 1]                                  |     4     |    4 (0.0%)     |   0 (-100.0%)   |
+|                                    [1:2101369:8] GPL WEB_SERVER /bin/ls command attempt [Priority: 1]                                    |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2101401:11] GPL EXPLOIT /msadc/samples/ access [Priority: 1]                                      |     3     |    3 (0.0%)     |   2 (-33.33%)   |
+|                                        [1:2101402:9] GPL EXPLOIT iissamples access [Priority: 1]                                         |    28     |    28 (0.0%)    |  10 (-64.29%)   |
+|                                       [1:2101403:12] GPL WEB_SERVER viewcode access [Priority: 1]                                        |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                   [1:2101487:13] GPL EXPLOIT /iisadmpwd/aexp2.htr access [Priority: 2]                                   |     1     |   0 (-100.0%)   |   0 (-100.0%)   |
+|                                       [1:2101489:10] GPL WEB_SERVER /~nobody access [Priority: 1]                                        |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                 [1:2101620:7] GPL POLICY TRAFFIC Non-Standard IP protocol [Priority: 2]                                  |    12     |  24 (+100.0%)   |  23 (+91.67%)   |
+|                                         [1:2101662:8] GPL WEB_SERVER /~ftp access [Priority: 2]                                          |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2101738:8] GPL WEB_SERVER global.inc access [Priority: 1]                                       |     3     |    3 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2101847:12] GPL WEB_SERVER webalizer access [Priority: 2]                                       |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                              [1:2101874:6] GPL WEB_SERVER Oracle Java Process Manager access [Priority: 2]                               |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2101877:11] GPL WEB_SERVER printenv access [Priority: 2]                                        |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                              [1:2101945:8] GPL WEB_SERVER unicode directory traversal attempt [Priority: 1]                              |    14     |    14 (0.0%)    |    14 (0.0%)    |
+|                                       [1:2102073:7] GPL WEB_SERVER globals.pl access [Priority: 2]                                       |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                               [1:2102091:12] GPL WEB_SERVER WEBDAV nessus safe scan attempt [Priority: 1]                                |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                       [1:2102131:4] GPL WEB_SERVER IISProtect access [Priority: 2]                                       |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                    [1:2102156:6] GPL WEB_SERVER mod_gzip_status access [Priority: 2]                                     |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                [1:2210044:2] SURICATA STREAM Packet with invalid timestamp [Priority: 3]                                 |     0     |    6 (+600%)    |     0 (0%)      |
+|                                  [1:2221002:1] SURICATA HTTP request field missing colon [Priority: 3]                                   |    20     |    20 (0.0%)    |   0 (-100.0%)   |
+|                              [1:2221010:1] SURICATA HTTP unable to match response to request [Priority: 3]                               |     0     | 2950 (+295000%) | 5748 (+574800%) |
+|                                     [1:2221013:1] SURICATA HTTP request header invalid [Priority: 3]                                     |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                     [1:2221015:1] SURICATA HTTP Host header ambiguous [Priority: 3]                                      |     4     |    4 (0.0%)     |   0 (-100.0%)   |
+|                           [1:2221029:1] SURICATA HTTP URI terminated by non-compliant character [Priority: 3]                            |     2     |    2 (0.0%)     |   0 (-100.0%)   |
+|                                    [1:2221042:1] SURICATA HTTP Request line incomplete [Priority: 3]                                     |     0     |     0 (0%)      | 6300 (+630000%) |
+|                                    [1:2221045:1] SURICATA HTTP Unexpected Request body [Priority: 3]                                     |    13     |    13 (0.0%)    |   1 (-92.31%)   |
+|                             [1:2260002:1] SURICATA Applayer Detect protocol only one direction [Priority: 3]                             |    18     |    18 (0.0%)    |  15 (-16.67%)   |
+|                          [1:2610180:1] TGI HUNT directory traversal chars in HTTP Request Header [Priority: 2]                           |     1     |    1 (0.0%)     |   0 (-100.0%)   |
+|                                         [1:2610238:1] TGI HUNT gitrepo HTTP Probe [Priority: 2]                                          |     1     |    1 (0.0%)     |    1 (0.0%)     |
++------------------------------------------------------------------------------------------------------------------------------------------+-----------+-----------------+-----------------+

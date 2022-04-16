@@ -1,0 +1,430 @@
++---------------+-----------+--------------------+--------------------+
+|  Priorities   | Baseline1 |     Baseline2      |   Test Scenario    |
++---------------+-----------+--------------------+--------------------+
+| [Priority: 1] |   1145    |    1137 (-0.7%)    |    38 (-96.68%)    |
+| [Priority: 2] |   2941    |   2931 (-0.34%)    |    50 (-98.3%)     |
+| [Priority: 3] |   8616    | 205149 (+2281.02%) | 295580 (+3330.59%) |
++---------------+-----------+--------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------+-----------+---------------------+---------------------+
+|                                                 Rules                                                 | Baseline1 |      Baseline2      |    Test Scenario    |
++-------------------------------------------------------------------------------------------------------+-----------+---------------------+---------------------+
+|                             (arp_spoof) unicast ARP request [Priority: 3]                             |     0     |       0 (0%)        |      1 (+100%)      |
+|                (http_inspect) 'HTTP' in version field not all upper case [Priority: 3]                |     0     |       0 (0%)        |      1 (+100%)      |
+|              (http_inspect) HTTP Content-Length message body was truncated [Priority: 3]              |    20     |     0 (-100.0%)     |     0 (-100.0%)     |
+|              (http_inspect) HTTP header line terminated by CR without a LF [Priority: 3]              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                 (http_inspect) POST or PUT w/o content-length or chunks [Priority: 3]                 |    23     |      23 (0.0%)      |     0 (-100.0%)     |
+|                           (http_inspect) URI badly formatted [Priority: 3]                            |    880    |     895 (+1.7%)     |     0 (-100.0%)     |
+|                              (http_inspect) UTF-8 encoding [Priority: 3]                              |    13     |      13 (0.0%)      |     0 (-100.0%)     |
+|                              (http_inspect) ascii encoding [Priority: 3]                              |    25     |      25 (0.0%)      |     3 (-88.0%)      |
+|                        (http_inspect) backslash used in URI path [Priority: 3]                        |    75     |      75 (0.0%)      |     0 (-100.0%)     |
+|                           (http_inspect) directory traversal [Priority: 3]                            |    85     |      85 (0.0%)      |     0 (-100.0%)     |
+|                          (http_inspect) double decoding attack [Priority: 3]                          |    28     |      28 (0.0%)      |     0 (-100.0%)     |
+|                       (http_inspect) format error in HTTP header [Priority: 3]                        |    20     |      20 (0.0%)      |     0 (-100.0%)     |
+|                  (http_inspect) illegal extra whitespace in start line [Priority: 3]                  |    14     |      14 (0.0%)      |     0 (-100.0%)     |
+|                        (http_inspect) misformatted HTTP traffic [Priority: 3]                         |    15     |      15 (0.0%)      |    17 (+13.33%)     |
+|                           (http_inspect) multi_slash encoding [Priority: 3]                           |    130    |    129 (-0.77%)     |     0 (-100.0%)     |
+|                             (http_inspect) not HTTP traffic [Priority: 3]                             |   6926    |    6938 (+0.17%)    |    6640 (-4.13%)    |
+|                       (http_inspect) request message without URI [Priority: 3]                        |     0     |       0 (0%)        |      2 (+200%)      |
+|                         (http_inspect) self directory traversal [Priority: 3]                         |     6     |      6 (0.0%)       |     5 (-16.67%)     |
+|                  (http_inspect) server response before client request [Priority: 3]                   |     2     |      2 (0.0%)       |  6912 (+345500.0%)  |
+|                              (http_inspect) simple request [Priority: 3]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       (http_inspect) unescaped space in HTTP URI [Priority: 3]                        |    13     |    45 (+246.15%)    |     0 (-100.0%)     |
+|                              (http_inspect) unknown method [Priority: 3]                              |     2     |      2 (0.0%)       |     3 (+50.0%)      |
+|               (http_inspect) unrecognized type of percent encoding in URI [Priority: 3]               |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                       (http_inspect) webroot directory traversal [Priority: 3]                        |    43     |      43 (0.0%)      |     0 (-100.0%)     |
+|                  (http_inspect) white space before or between messages [Priority: 3]                  |     0     |      1 (+100%)      |      1 (+100%)      |
+|                      (http_inspect) white space within header name [Priority: 3]                      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|        (ipv6) IPv6 header includes an invalid value for the 'next header' field [Priority: 3]         |    283    |    280 (-1.06%)     |   1313 (+363.96%)   |
+|                                (port_scan) TCP portscan [Priority: 3]                                 |     0     |     31 (+3100%)     |       0 (0%)        |
+|                  (stream_tcp) TCP timestamp is outside of PAWS window [Priority: 3]                   |     0     |      6 (+600%)      |       0 (0%)        |
+|                          (tcp) experimental TCP options found [Priority: 3]                           |     0     | 196168 (+19616800%) | 280682 (+28068200%) |
+|              BROWSER-OTHER HTTP characters prior to header evasion attempt [Priority: 2]              |     5     |      5 (0.0%)       |      5 (0.0%)       |
+|                     FILE-IDENTIFY .htr access file download request [Priority: 3]                     |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                 INDICATOR-COMPROMISE c99shell.php command request - cmd [Priority: 1]                 |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|         INDICATOR-OBFUSCATION select concat statement - possible sql injection [Priority: 1]          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          INDICATOR-SCAN PHP info leak attempt [Priority: 2]                           |     9     |      9 (0.0%)       |     0 (-100.0%)     |
+|                 MALWARE-CNC Win.Trojan.Zbot variant outbound connection [Priority: 1]                 |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      OS-OTHER Cisco IOS HTTP configuration attempt [Priority: 1]                      |    94     |     85 (-9.57%)     |     0 (-100.0%)     |
+|           OS-WINDOWS Microsoft generic javascript handler in URI XSS attempt [Priority: 1]            |    17     |      17 (0.0%)      |     0 (-100.0%)     |
+|              POLICY-OTHER Adobe ColdFusion admin interface access attempt [Priority: 1]               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|             POLICY-OTHER Adobe ColdFusion component browser access attempt [Priority: 1]              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       POLICY-OTHER external admin access attempt [Priority: 2]                        |    522    |     522 (0.0%)      |     0 (-100.0%)     |
+|          POLICY-OTHER script tag in URI - likely cross-site scripting attempt [Priority: 1]           |    284    |     284 (0.0%)      |     2 (-99.3%)      |
+|                    PROTOCOL-ICMP IPv6 multicast neighbor add attempt [Priority: 3]                    |     0     |    292 (+29200%)    |       0 (0%)        |
+|            PROTOCOL-SCADA Cogent DataHub server-side information disclosure [Priority: 1]             |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|            SERVER-APACHE Apache SSI error page cross-site scripting attempt [Priority: 1]             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-APACHE Apache Tomcat TroubleShooter servlet access [Priority: 2]                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-APACHE Apache Tomcat server snoop access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|        SERVER-APACHE Apache Tomcat servlet mapping cross site scripting attempt [Priority: 1]         |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|       SERVER-APACHE Apache mod_proxy reverse proxy information disclosure attempt [Priority: 2]       |    863    |     863 (0.0%)      |     0 (-100.0%)     |
+|                                 SERVER-IIS .cnf access [Priority: 2]                                  |    11     |      11 (0.0%)      |     0 (-100.0%)     |
+|                  SERVER-IIS /SiteServer/Publishing/viewcode.asp access [Priority: 2]                  |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-IIS /exchange/root.asp access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-IIS /exchange/root.asp attempt [Priority: 1]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-IIS /iisadmpwd/aexp2.htr access [Priority: 2]                          |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                            SERVER-IIS /msadc/samples/ access [Priority: 1]                            |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-IIS /scripts/samples/ access [Priority: 1]                           |    10     |     9 (-10.0%)      |     0 (-100.0%)     |
+|                              SERVER-IIS ASP contents view [Priority: 1]                               |     3     |      3 (0.0%)       |     1 (-66.67%)     |
+|                              SERVER-IIS CGImail.exe access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-IIS CodeRed v2 root.exe access [Priority: 1]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS IISProtect access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-IIS IISProtect siteadmin.asp access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS ISAPI .ida access [Priority: 2]                               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS ISAPI .idq access [Priority: 2]                               |    10     |      10 (0.0%)      |     0 (-100.0%)     |
+|                              SERVER-IIS ISAPI .idq attempt [Priority: 1]                              |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-IIS ISAPI .printer access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-IIS JET VBA access [Priority: 2]                                |     2     |     1 (-50.0%)      |     0 (-100.0%)     |
+|                           SERVER-IIS MS BizTalk server access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-IIS MSProxy access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|           SERVER-IIS Microsoft ASP.NET bad request denial of service attempt [Priority: 2]            |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|              SERVER-IIS Microsoft Windows IIS directory traversal attempt [Priority: 1]               |     3     |      3 (0.0%)       |    28 (+833.33%)    |
+|     SERVER-IIS Microsoft Windows IIS5 NTLM and basic authentication bypass attempt [Priority: 1]      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-IIS VP-ASP ShopDisplayProducts.asp access [Priority: 2]                     |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS _mem_bin access [Priority: 2]                                |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS adctest.asp access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                                 SERVER-IIS bdir access [Priority: 2]                                  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS bdir.htr access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-IIS cmd.exe access [Priority: 1]                                |    24     |      24 (0.0%)      |     0 (-100.0%)     |
+|                           SERVER-IIS codebrowser Exair access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-IIS codebrowser SDK access [Priority: 2]                            |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS ctss.idc access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-IIS doctodep.btr access [Priority: 2]                              |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-IIS fpcount access [Priority: 2]                                |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS global.asa access [Priority: 2]                               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-IIS httpodbc.dll access - nimda [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS iisadmin access [Priority: 1]                                |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS iisadmpwd attempt [Priority: 1]                               |     5     |     4 (-20.0%)      |     0 (-100.0%)     |
+|                              SERVER-IIS iissamples access [Priority: 1]                               |    28     |      28 (0.0%)      |     0 (-100.0%)     |
+|                                SERVER-IIS jet vba access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS msadcs.dll access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS newdsn.exe access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS pbserver access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS ping.asp access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-IIS postinfo.asp access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-IIS repost.asp access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-IIS scripts-browse access [Priority: 1]                             |     0     |       0 (0%)        |      1 (+100%)      |
+|                             SERVER-IIS search97.vts access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-IIS sgdynamo.exe access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS showcode access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-IIS showcode.asp access [Priority: 2]                              |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-IIS site server config access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-IIS srchadm access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                 SERVER-IIS tilde character file name discovery attempt [Priority: 2]                  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS trace.axd access [Priority: 2]                               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS users.xml access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-IIS viewcode access [Priority: 2]                                |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-IIS viewcode.asp access [Priority: 2]                              |     8     |      8 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-IIS webhits access [Priority: 2]                                |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-OTHER Adobe Coldfusion ?Mode=debug attempt [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Adobe Coldfusion addcontent.cfm access [Priority: 2]                   |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                   SERVER-OTHER Adobe Coldfusion administrator access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Adobe Coldfusion application.cfm access [Priority: 2]                   |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-OTHER Adobe Coldfusion beaninfo access [Priority: 2]                      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-OTHER Adobe Coldfusion cfappman access [Priority: 2]                      |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                    SERVER-OTHER Adobe Coldfusion cfcache.map access [Priority: 2]                     |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-OTHER Adobe Coldfusion cfmlsyntaxcheck.cfm access [Priority: 2]                 |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-OTHER Adobe Coldfusion displayfile access [Priority: 1]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-OTHER Adobe Coldfusion evaluate.cfm access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-OTHER Adobe Coldfusion exampleapp access [Priority: 2]                     |     5     |      5 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-OTHER Adobe Coldfusion exampleapp application.cfm [Priority: 2]                 |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                      SERVER-OTHER Adobe Coldfusion expeval access [Priority: 1]                       |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-OTHER Adobe Coldfusion exprcalc access [Priority: 2]                      |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Adobe Coldfusion fileexists.cfm access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-OTHER Adobe Coldfusion getfile.cfm access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|               SERVER-OTHER Adobe Coldfusion gettempdirectory.cfm access  [Priority: 2]                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-OTHER Adobe Coldfusion openfile.cfm access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-OTHER Adobe Coldfusion parks access [Priority: 2]                        |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                    SERVER-OTHER Adobe Coldfusion sendmail.cfm access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-OTHER Adobe Coldfusion snippets attempt [Priority: 2]                      |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Adobe Coldfusion sourcewindow.cfm access [Priority: 2]                  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Adobe Coldfusion startstop DOS access [Priority: 1]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Adobe Coldfusion viewexample.cfm access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|           SERVER-OTHER Apple CUPS web interface cross site scripting attempt [Priority: 1]            |    294    |     294 (0.0%)      |     2 (-99.32%)     |
+|                      SERVER-OTHER Microsoft Frontpage .... request [Priority: 1]                      |    30     |     32 (+6.67%)     |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage /_vti_bin/ access [Priority: 2]                    |    62     |     63 (+1.61%)     |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage _vti_inf.html access [Priority: 2]                  |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                    SERVER-OTHER Microsoft Frontpage _vti_rpc access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage access.cnf access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|               SERVER-OTHER Microsoft Frontpage administrators.pwd access [Priority: 2]                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage author.exe access [Priority: 2]                    |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage authors.pwd access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage cfgwiz.exe access [Priority: 2]                    |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage contents.htm access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage dvwssr.dll access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage form_results access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-OTHER Microsoft Frontpage form_results.htm access [Priority: 2]                 |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage fpadmcgi.exe access [Priority: 2]                   |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage fpadmin.htm access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage fpremadm.exe access [Priority: 2]                   |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage fpsrvadm.exe access [Priority: 2]                   |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage orders.htm access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage orders.txt access [Priority: 2]                    |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                 SERVER-OTHER Microsoft Frontpage rad fp30reg.dll access [Priority: 2]                 |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage register.htm access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage register.txt access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-OTHER Microsoft Frontpage registrations.htm access [Priority: 2]                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-OTHER Microsoft Frontpage registrations.txt access [Priority: 2]                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage service.cnf access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-OTHER Microsoft Frontpage service.pwd [Priority: 2]                       |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-OTHER Microsoft Frontpage services.cnf access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-OTHER Microsoft Frontpage shtml.dll access [Priority: 2]                    |     2     |     1 (-50.0%)      |     0 (-100.0%)     |
+|                    SERVER-OTHER Microsoft Frontpage shtml.exe access [Priority: 2]                    |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-OTHER Microsoft Frontpage users.pwd access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-OTHER Microsoft Frontpage writeto.cnf access [Priority: 2]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-OTHER readme.eml download attempt [Priority: 1]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP .DS_Store access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP .FBCIndex access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP .bash_history access [Priority: 1]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP .history access [Priority: 1]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP .htaccess access [Priority: 2]                              |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP .htpasswd access attempt [Priority: 1]                          |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP .nsconfig access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP .wwwacl access [Priority: 2]                               |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP /.... access [Priority: 2]                                |    14     |      14 (0.0%)      |    40 (+185.71%)    |
+|                     SERVER-WEBAPP /.svn/entries file access attempt [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP /CVS/Entries access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP /_admin access [Priority: 2]                               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP /doc/ access [Priority: 2]                                |    56     |      56 (0.0%)      |     0 (-100.0%)     |
+|                           SERVER-WEBAPP /doc/packages access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP /etc/passwd file access attempt [Priority: 2]                      |    267    |     267 (0.0%)      |     0 (-100.0%)     |
+|                      SERVER-WEBAPP /etc/shadow file access attempt [Priority: 2]                      |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP /fcgi-bin/echo.exe access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP /home/www access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP /ws_ftp.log file access attempt [Priority: 2]                      |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP /wwwboard/passwd.txt access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP /~ftp access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-WEBAPP 3R Soft MailStudio 2000 mailview.cgi access [Priority: 2]                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP ?PageServices access [Priority: 2]                            |     1     |      1 (0.0%)       |      1 (0.0%)       |
+|                            SERVER-WEBAPP Admin_files access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-WEBAPP Advanced Poll admin_edit.php access [Priority: 2]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-WEBAPP Advanced Poll admin_settings.php access [Priority: 2]                  |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                 SERVER-WEBAPP Advanced Poll admin_templates.php access [Priority: 2]                  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-WEBAPP Alabanza Control Panel nsManager.cgi access [Priority: 2]                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|      SERVER-WEBAPP Apache Server mod_proxy Error Page cross site scripting attempt [Priority: 1]      |     7     |      7 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP Axis Storpoint CD access [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP BBoard access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP BLNews objects.inc.php4 access [Priority: 2]                       |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP Blahz-DNS dostuff.php access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                 SERVER-WEBAPP Blahz-DNS dostuff.php modify user attempt [Priority: 1]                 |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP CCBill whereami.cgi access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP CGIScript.net csNews.cgi access [Priority: 2]                      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP CSGuestbook setup attempt [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP CSMailto.cgi access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                 SERVER-WEBAPP Cisco Catalyst command execution attempt [Priority: 2]                  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|          SERVER-WEBAPP Citrix ADC and Gateway arbitrary code execution attempt [Priority: 1]          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-WEBAPP Compaq Insight directory traversal [Priority: 1]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-WEBAPP Cyboards default_header.php access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP DB4Web access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP DCShop access [Priority: 2]                               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP DCShop auth_user_file.txt access [Priority: 2]                      |     5     |      5 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP DCShop orders.txt access [Priority: 2]                          |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP EasyBoard 2000 ezadmin.cgi access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP EasyBoard 2000 ezboard.cgi access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP EasyBoard 2000 ezman.cgi access [Priority: 2]                      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP Ecommerce checks.txt access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP Ecommerce import.txt access [Priority: 2]                        |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP ExAir access [Priority: 2]                                |     5     |      5 (0.0%)       |     0 (-100.0%)     |
+| SERVER-WEBAPP F5 BIG-IP Traffic Management User Interface remote code execution attempt [Priority: 1] |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP Faq-O-Matic fom.cgi access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|      SERVER-WEBAPP Fortinet FortiOS SSL VPN web portal directory traversal attempt [Priority: 1]      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP ICQ Webfront HTTP DOS [Priority: 1]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-WEBAPP IGeneric Free Shopping Cart page.php access [Priority: 2]                |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|       SERVER-WEBAPP IOServer OPC Server directory traversal exploitation attempt [Priority: 1]        |    44     |     46 (+4.55%)     |     0 (-100.0%)     |
+|                     SERVER-WEBAPP Interactive Story story.pl access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP InteractiveQuery.jsp access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP JBoss JMX console access attempt [Priority: 2]                      |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP JBoss web console access attempt [Priority: 2]                      |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|          SERVER-WEBAPP Joomla com_contenthistory module SQL injection attempt [Priority: 1]           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP Linksys BEFSR41 gozila.cgi access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|           SERVER-WEBAPP MVPower DVR Shell arbitrary command execution attempt [Priority: 1]           |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP MachineInfo access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|            SERVER-WEBAPP Macromedia SiteSpring cross site scripting attempt [Priority: 1]             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP Mambo upload.php access [Priority: 2]                          |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP Mambo uploadimage.php access [Priority: 2]                        |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|              SERVER-WEBAPP Multiple Products invalid HTTP request attempt [Priority: 2]               |    493    |     493 (0.0%)      |     0 (-100.0%)     |
+|              SERVER-WEBAPP Multiple Vendor server file disclosure attempt [Priority: 1]               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|            SERVER-WEBAPP NeoFrag CMS database information disclosure attempt [Priority: 2]            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                 SERVER-WEBAPP Netscape Enterprise Server directory view [Priority: 2]                 |     1     |      1 (0.0%)       |      1 (0.0%)       |
+|                      SERVER-WEBAPP Netscape PublishingXpert access [Priority: 2]                      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP Netscape admin passwd [Priority: 1]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP Netscape dir index wp [Priority: 2]                           |     1     |      1 (0.0%)       |      1 (0.0%)       |
+|                      SERVER-WEBAPP Nortel Contivity cgiproc access [Priority: 2]                      |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|  SERVER-WEBAPP Novell GroupWise Internet Agent content-length integer overflow attempt [Priority: 1]  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP Novell Groupwise gwweb.exe access [Priority: 2]                     |     0     |       0 (0%)        |      2 (+200%)      |
+|                    SERVER-WEBAPP Novell Groupwise gwweb.exe attempt [Priority: 2]                     |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|      SERVER-WEBAPP Novell Zenworks Mobile Management cross site scripting attempt [Priority: 1]       |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|   SERVER-WEBAPP Oracle 9i Application Server OWA_UTIL information disclosure attempt [Priority: 1]    |     7     |     6 (-14.29%)     |     0 (-100.0%)     |
+|      SERVER-WEBAPP Oracle Application Server 9i unauthenticated dms access attempt [Priority: 2]      |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-WEBAPP Oracle Cobalt RaQ service.cgi access [Priority: 2]                    |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|               SERVER-WEBAPP Oracle Dynamic Monitoring Services dms access [Priority: 2]               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                    SERVER-WEBAPP Oracle Java Process Manager access [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP Oracle XSQLConfig.xml access [Priority: 2]                        |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|           SERVER-WEBAPP PHP includedir parameter remote file include attempt [Priority: 1]            |    18     |      18 (0.0%)      |     0 (-100.0%)     |
+|                 SERVER-WEBAPP PHP phpinfo cross site scripting attempt [Priority: 1]                  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP PHP-CGI command injection attempt [Priority: 1]                     |     3     |      3 (0.0%)       |     1 (-66.67%)     |
+|                   SERVER-WEBAPP PHP-Wiki cross site scripting attempt [Priority: 1]                   |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP PHPLIB remote command attempt [Priority: 1]                       |     0     |       0 (0%)        |      3 (+300%)      |
+|                     SERVER-WEBAPP Phorum /support/common.php access [Priority: 1]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP Phorum admin access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP Progress webspeed access [Priority: 1]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|             SERVER-WEBAPP Pulse Secure SSL VPN arbitrary file read attempt [Priority: 1]              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|             SERVER-WEBAPP Pulse Secure SSL VPN directory traversal attempt [Priority: 1]              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|               SERVER-WEBAPP RBS ISP /newuser  directory traversal attempt [Priority: 1]               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP RBS ISP /newuser access [Priority: 2]                          |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                  SERVER-WEBAPP Ruby on Rails command injection attempt [Priority: 1]                  |     5     |      5 (0.0%)       |     0 (-100.0%)     |
+|                 SERVER-WEBAPP SAP servlet authentication bypass attempt [Priority: 1]                 |    45     |      45 (0.0%)      |     0 (-100.0%)     |
+|                         SERVER-WEBAPP SalesLogix Eviewer access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP ServletManager access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP Setup.php access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|      SERVER-WEBAPP Sourceforge Gallery search engine cross-site scripting attempt [Priority: 1]       |     5     |      5 (0.0%)       |     0 (-100.0%)     |
+|  SERVER-WEBAPP Symantec Antivirus admin scan interface negative Content-Length attempt [Priority: 1]  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|     SERVER-WEBAPP TikiWiki tiki-graph_formula.php remote php code execution attempt [Priority: 1]     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-WEBAPP TrackerCam negative Content-Length attempt [Priority: 1]                 |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|           SERVER-WEBAPP Trend Micro Interscan VirusWall setpasswd.cgi access [Priority: 2]            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP Trend Micro OfficeScan access [Priority: 2]                       |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP VirusWall FtpSave access [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP VirusWall catinfo access [Priority: 2]                          |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP WEB-INF access [Priority: 2]                               |     5     |      5 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP a1stats a1disp3.cgi access [Priority: 2]                         |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|              SERVER-WEBAPP a1stats a1disp3.cgi directory traversal attempt [Priority: 1]              |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP active.log access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP admin.php access [Priority: 2]                              |    26     |      26 (0.0%)      |     0 (-100.0%)     |
+|                              SERVER-WEBAPP admin.pl access [Priority: 2]                              |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP adminlogin access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP ans.pl access [Priority: 2]                               |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP ans.pl attempt [Priority: 1]                               |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP apache source.asp file access [Priority: 2]                       |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP architext_query.pl access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP args.bat access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP autohtml.php access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP awstats access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP b2 cafelog gm-2-b2.php access [Priority: 2]                       |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP backup access [Priority: 2]                               |     7     |      7 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP basilix mysql.class access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP basilix sendmail.inc access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP bb_smilies.php access [Priority: 2]                           |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP bigconf.cgi access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP calendar access [Priority: 2]                              |    23     |      23 (0.0%)      |     0 (-100.0%)     |
+|                            SERVER-WEBAPP calendar.php access [Priority: 2]                            |     9     |      9 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP calendar.pl access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP calendar_admin.pl access [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|           SERVER-WEBAPP calendar_admin.pl arbitrary command execution attempt [Priority: 1]           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP cart 32 AdminPwd access [Priority: 2]                          |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                                SERVER-WEBAPP cat_ access [Priority: 2]                                |    19     |      19 (0.0%)      |     0 (-100.0%)     |
+|                             SERVER-WEBAPP catgy.cgi access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP caucho-status access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP cgicso access [Priority: 2]                               |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP cgimail access [Priority: 2]                               |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP cgitest.exe access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP classifieds.cgi access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP convert.bas access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP cpshost.dll access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|       SERVER-WEBAPP cross site scripting HTML Image tag set to javascript attempt [Priority: 1]       |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP csChatRBox setup attempt [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP csLiveSupport setup attempt [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP csPassword.cgi access [Priority: 2]                           |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP csSearch setup attempt [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP cvslog.cgi access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-WEBAPP db4web_c directory traversal attempt [Priority: 1]                    |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP dcforum.cgi access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP directory.php access [Priority: 2]                            |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP document.d2w access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP eXtropia webstore access [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP emumail.cgi access [Priority: 2]                             |     5     |      5 (0.0%)       |     0 (-100.0%)     |
+|   SERVER-WEBAPP encoded cross site scripting HTML Image tag set to javascript attempt [Priority: 1]   |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP envout.bat access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP faxsurvey access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP files.pl access [Priority: 2]                              |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP finger access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP gbook.cgi access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|            SERVER-WEBAPP generic SQL select statement possible sql injection [Priority: 1]            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|               SERVER-WEBAPP generic cross site scripting via url attempt [Priority: 2]                |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP glimpse access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP global.inc access [Priority: 1]                             |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP globals.jsa access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP globals.pl access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP handler access [Priority: 2]                               |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP httpd.conf access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                     SERVER-WEBAPP iChat directory traversal attempt [Priority: 2]                     |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP iPlanet .perf access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                SERVER-WEBAPP iPlanet Search directory traversal attempt [Priority: 1]                 |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP intranet access [Priority: 2]                              |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP jrun directory browse attempt [Priority: 1]                       |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP listrec.pl access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP loadpage.cgi access [Priority: 2]                            |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP logicworks.ini access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP login.htm access [Priority: 2]                              |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP mall log order access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP ministats admin access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP mlog.phtml access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP mod-plsql administration access [Priority: 2]                      |     8     |      8 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP mod_gzip_status access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP modules.php access [Priority: 2]                             |    36     |      36 (0.0%)      |     0 (-100.0%)     |
+|            SERVER-WEBAPP mxBB MX Faq module_root_path file inclusion attempt [Priority: 1]            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP myPHPNuke chatheader.php access [Priority: 2]                      |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP myPHPNuke partner.php access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP mylog.phtml access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                               SERVER-WEBAPP nobody access [Priority: 1]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP oracle portal demo access [Priority: 2]                         |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                   SERVER-WEBAPP oracle web application server access [Priority: 2]                    |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|              SERVER-WEBAPP oracle web arbitrary command execution attempt [Priority: 1]               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP p-news.php access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP parse_xml.cgi access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP password sent via URL parameter [Priority: 1]                      |    11     |      11 (0.0%)      |     0 (-100.0%)     |
+|                                SERVER-WEBAPP phf access [Priority: 2]                                 |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP philboard_admin.asp access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP php.exe access [Priority: 2]                               |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|               SERVER-WEBAPP phpMyAdmin db_details_importdocsql.php access [Priority: 1]               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP piranha passwd.php3 access [Priority: 2]                         |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP printenv access [Priority: 2]                              |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP read_body.php access attempt [Priority: 2]                        |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP readmsg.php access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP redirect access [Priority: 2]                              |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                        SERVER-WEBAPP remote include path attempt [Priority: 1]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP rolis guestbook access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-WEBAPP root access [Priority: 2]                                |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP search.cgi access [Priority: 2]                             |     4     |      4 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP search.dll access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP search.vts access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP server-info access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP server-status access [Priority: 2]                            |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP shopping cart access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP shoutbox.php access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP smartsearch.cgi access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP smssend.php access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP source.jsp access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP stronghold-info access [Priority: 2]                           |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                         SERVER-WEBAPP stronghold-status access [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP test.cgi access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP test.php access [Priority: 2]                              |    16     |      16 (0.0%)      |     0 (-100.0%)     |
+|                  SERVER-WEBAPP triple dot directory traversal attempt [Priority: 1]                   |    13     |      13 (0.0%)      |     0 (-100.0%)     |
+|                            SERVER-WEBAPP tstisapi.dll access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                          SERVER-WEBAPP ttCMS header.php access [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                      SERVER-WEBAPP unify eWave ServletExec upload [Priority: 1]                       |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP upload.cgi access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                       SERVER-WEBAPP user_update_passwd.pl access [Priority: 2]                        |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP view_source access [Priority: 2]                             |     1     |     0 (-100.0%)     |     0 (-100.0%)     |
+|                             SERVER-WEBAPP w3tvars.pm access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP way-board access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                           SERVER-WEBAPP way-board.cgi access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP webadmin.dll access [Priority: 2]                            |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP webalizer access [Priority: 2]                              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP webcart access [Priority: 2]                               |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP webcart-lite access [Priority: 2]                            |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP webdist.cgi access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP webhits.exe access [Priority: 2]                             |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                 SERVER-WEBAPP weblogic/tomcat .jsp view source attempt [Priority: 1]                  |    94     |      94 (0.0%)      |     0 (-100.0%)     |
+|                          SERVER-WEBAPP win-c-sample.exe access [Priority: 2]                          |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-WEBAPP wrap access [Priority: 2]                                |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                             SERVER-WEBAPP ws_ftp.ini access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                              SERVER-WEBAPP www-sql access [Priority: 2]                               |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|                            SERVER-WEBAPP wwwboard.pl access [Priority: 2]                             |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|                                SERVER-WEBAPP yabb access [Priority: 2]                                |     6     |      6 (0.0%)       |     0 (-100.0%)     |
+|                                 SQL counter.exe access [Priority: 2]                                  |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|             SQL generic sql with comments injection attempt - GET parameter [Priority: 1]             |     3     |      3 (0.0%)       |     0 (-100.0%)     |
+|                                 SQL queryhit.htm access [Priority: 2]                                 |     1     |      1 (0.0%)       |     0 (-100.0%)     |
+|            SQL union select - possible sql injection attempt - GET parameter [Priority: 2]            |     2     |      2 (0.0%)       |     0 (-100.0%)     |
+|              SQL use of concat function with select - likely SQL injection [Priority: 1]              |     1     |      1 (0.0%)       |     0 (-100.0%)     |
++-------------------------------------------------------------------------------------------------------+-----------+---------------------+---------------------+
