@@ -27,7 +27,11 @@ for request in attacks:
 
     time.sleep(0.2)
 
-    os.system("tc qdisc add dev {} root netem loss 100%".format(sys.argv[2]))
+    os.system(
+        "ssh -i /root/.ssh/core root@{} 'ip route add unreachable {}'".format(
+            sys.argv[2], sys.argv[1]
+        )
+    )
 
     sock.send(req2)
 
@@ -47,6 +51,10 @@ for request in attacks:
 
     sock.close()
 
-    os.system("tc qdisc del dev {} root netem loss 100%".format(sys.argv[2]))
+    os.system(
+        "ssh -i /root/.ssh/core root@{} 'ip route del unreachable {}'".format(
+            sys.argv[2], sys.argv[1]
+        )
+    )
 
 print(f"Failed: {failed}")

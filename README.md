@@ -9,8 +9,7 @@
 4. [Test Scenarios](#test-scenarios)
     1. [(scenario1/baseline) TCP Fragmentation](#scenario1) 
     2. [(scenario2) MPTCP Fragmentation in a single subflow](#scenario2)
-    3. [(scenario3) PTCP Fragmentation across a single IDS](#scenario3)
-    4. [(scenario4) MPTCP Fragmentation across multiple IDS](#scenario4)
+    3. [(scenario3) MPTCP Fragmentation across multiple IDS](#scenario3)
 
 ---
 
@@ -86,13 +85,7 @@ This scenario is very similar to the previous one, however this time instead of 
 ---
 
 <a name="scenario3"></a>
-### MPTCP Fragmentation across a single IDS (scenario3)
-In this scenario, the **A**ttacker has two interfaces in two different subnets, meanwhile the **T**arget is only connected to one subnet and has only one interface. Here the request is splitted across the two subflows, which causes the NIDS to see data arriving from different MPTCP subflows/TCP Connections but that belong to the same overall MPTCP connection.
-
----
-
-<a name="scenario4"></a>
-### MPTCP Fragmentation across multiple IDS (scenario4)
+### MPTCP Fragmentation across multiple IDS (scenario3)
 This last scenario is similar to the previous, however this time the **T**arget server is the one using two network interfaces. Here two different NIDS analysis are conducted, one for each subnet that the target is connected to. In this scenario, by splitting the request across the subflows, only a fraction of the total data goes through each network, therefore it is not possible for the NIDS to have a complete picture of the attack. 
 
 [Back to top](#contents)

@@ -17,8 +17,11 @@ for i in range(100):
 
     time.sleep(1)
 
-    # Introduce packet loss in the 1st interface used
-    os.system("tc qdisc add dev {} root netem loss 100%".format(sys.argv[2]))
+    os.system(
+        "ssh -i /root/.ssh/core root@{} 'ip route add unreachable {}'".format(
+            sys.argv[2], sys.argv[1]
+        )
+    )
 
     sock.send(req2)
 
@@ -30,5 +33,8 @@ for i in range(100):
 
     sock.close()
 
-    # Remove packet loss
-    os.system("tc qdisc del dev {} root netem loss 100%".format(sys.argv[2]))
+    os.system(
+        "ssh -i /root/.ssh/core root@{} 'ip route del unreachable {}'".format(
+            sys.argv[2], sys.argv[1]
+        )
+    )
