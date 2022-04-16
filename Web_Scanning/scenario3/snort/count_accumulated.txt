@@ -1,0 +1,37 @@
++---------------+--------+
+|   Priority    | Count  |
++---------------+--------+
+| [Priority: 1] |   38   |
+| [Priority: 2] |   50   |
+| [Priority: 3] | 295580 |
++---------------+--------+
+
++----------------------------------------------------------------------------------------+--------+
+|                                         Rules                                          | Count  |
++----------------------------------------------------------------------------------------+--------+
+|                   (tcp) experimental TCP options found [Priority: 3]                   | 280682 |
+|           (http_inspect) server response before client request [Priority: 3]           |  6912  |
+|                     (http_inspect) not HTTP traffic [Priority: 3]                      |  6640  |
+| (ipv6) IPv6 header includes an invalid value for the 'next header' field [Priority: 3] |  1313  |
+|                        SERVER-WEBAPP /.... access [Priority: 2]                        |   40   |
+|       SERVER-IIS Microsoft Windows IIS directory traversal attempt [Priority: 1]       |   28   |
+|                 (http_inspect) misformatted HTTP traffic [Priority: 3]                 |   17   |
+|      BROWSER-OTHER HTTP characters prior to header evasion attempt [Priority: 2]       |   5    |
+|                 (http_inspect) self directory traversal [Priority: 3]                  |   5    |
+|                      (http_inspect) unknown method [Priority: 3]                       |   3    |
+|                      (http_inspect) ascii encoding [Priority: 3]                       |   3    |
+|               SERVER-WEBAPP PHPLIB remote command attempt [Priority: 1]                |   3    |
+|    SERVER-OTHER Apple CUPS web interface cross site scripting attempt [Priority: 1]    |   2    |
+|   POLICY-OTHER script tag in URI - likely cross-site scripting attempt [Priority: 1]   |   2    |
+|                (http_inspect) request message without URI [Priority: 3]                |   2    |
+|             SERVER-WEBAPP Novell Groupwise gwweb.exe access [Priority: 2]              |   2    |
+|          (http_inspect) white space before or between messages [Priority: 3]           |   1    |
+|             SERVER-WEBAPP PHP-CGI command injection attempt [Priority: 1]              |   1    |
+|        (http_inspect) 'HTTP' in version field not all upper case [Priority: 3]         |   1    |
+|                    SERVER-WEBAPP ?PageServices access [Priority: 2]                    |   1    |
+|         SERVER-WEBAPP Netscape Enterprise Server directory view [Priority: 2]          |   1    |
+|                   SERVER-WEBAPP Netscape dir index wp [Priority: 2]                    |   1    |
+|                     (arp_spoof) unicast ARP request [Priority: 3]                      |   1    |
+|                       SERVER-IIS ASP contents view [Priority: 1]                       |   1    |
+|                     SERVER-IIS scripts-browse access [Priority: 1]                     |   1    |
++----------------------------------------------------------------------------------------+--------+
